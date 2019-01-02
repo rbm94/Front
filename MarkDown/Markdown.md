@@ -40,4 +40,4 @@ Pour avoir un retour à la ligne dans le même paragraphe je termine ma ligne av
 [retour en haut] (#top)
 
 # Les images 
-![Groot image] (https://media.giphy.com/media/R97jJCEGEmh0I/giphy.gif)
+![Groot image] https://media.giphy.com/media/R97jJCEGEmh0I/giphy.gif
