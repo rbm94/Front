@@ -1,0 +1,39 @@
+*{
+    text-align: right;
+}
+body{
+    background: rebeccapurple;
+}
+ header{
+background-color: grey;
+color: white (couleur du texte)
+height: 100px; (hauteur de mon header)
+}
+nav{
+    background-color: blue 
+    height: 60px;
+}
+section {
+    background: navy;
+ height: 550px   
+}
+article{
+    background-color: #ff5733;
+    height: 66px;
+}
+.jaune{ 
+background-color: yellow;
+}
+#noir{/* je cible l'ID avec un '#' */
+    background-color: black;
+    color: white;
+    text-align:justify;
+    font-size: 25px
+}
+footer{
+    background-color: #daf7a6;
+    height:100px;
+}
+nav , footer{
+color: purple
+}

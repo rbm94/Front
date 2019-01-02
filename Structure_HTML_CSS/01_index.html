@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--
+         contrôler la mise en page sur les navitgateurs mobiles ici le 1.0
+        signifie qu'il n'y a pas de zoom-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--
+        compatibilité avec le navigateur edge-->
+    <meta name="description" content="Ma première page en HTML">
+        <!-- Description sous le titre dans la recherche de google-->
+    <meta name="author" content="Sandra">
+    <!-- Nom de l'auteur du site-->
+    <link rel="stylesheet" href="css/01_index.css">
+    <!-- relie le fichier
+        HTML au fichier  de mise en forme CSS (feuille de style)
+     CSS( Cascading style sheet)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=indie+Flower">
+    <!-- lien pour les polices utilisées ici via "Google Font"-->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Corps (contenu) de la page-->
+    <!-- c'est ma première page web ! Le navigateur affiche le texte, les images -->
+    <!-- ... contenus dans le bloc de ma balise &lt;body>. -->
+    <!--&lt; permet d'afficher ma balise html dans le nivigateur, si je mets
+     un cgevron normalement ma balise sera interprétée par le navigateur
+    -->
+    <h1>Titre h1</h1>
+    <h2>Titre h2</h2>
+    <h3>Titre h3</h3>
+    <h4>Titre h4</h4>
+    <h5>Titre h5</h5>
+    <h6>Titre h6</h6>
+
+    <p>Ceci est un paragraphe.</p>
+    <p>Les paragraphes sont délimités par la balise &lt;p>.</p>
+
+    </body>-- Paragraphe pré-formaté-->
+    <pre>Les numériques de Vitry 2018/2019</pre>
+    <p>Les numériques de Vitry de 2018/2019</p>
+
+    <!-- Les retours à la ligne-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt modi soluta illum, dolorem doloremque omnis aliquam, non maxime minus ut. Voluptatem quae eos harum facere. Est odit doloribus consectetur.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt modi soluta illum,<br/> dolorem doloremque omnis aliquam, non maxime minus ut. Voluptatem quae eos harum facere. Est odit doloribus consectetur.</p>
+
+
+    <!-- la disposition-->    
+    <p style="text-align:right">Ce paragraphe sur deux<br/> lignes est disposé à droite.</p> 
+    <p style="text-align:center">Ce paragraphe sur deux<br/> lignes est disposé au centre.</p>
+    <p style="text-align:left">Ce paragraphe sur deux<br/> lignes est disposé à gauche.</p>
+
+    <p style"text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor, ipsam ut commodi iste quisquam repellendus asperiores aliquid quod aliquam nulla mollitia harum dolore, illum rem modi, facere recusandae similique!.<br />ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus inventore dolore expedita reiciendis tenetur repellat exercitationem deserunt. Recusandae harum quibusdam repellat nemo unde accusantium saepe eligendi commodi dolor? Eum, accusamus.<br/>
+
+      Ce paragraphe sur deux<br/> lignes est disposé à gauche.
+     </p>
+      <p>
+     Voici la structure de base d'une page HTML:<br/>
+      &lt;!DOCTYPE html><br/>
+      &lt;html><br/>
+      &lt;head><br/>
+      &lt;title>&lt;/title><br/>
+      &lt;head><br/>
+       &lt;body><br/><br/>
+      lt;body><br/>
+         &lt;html><br/>
+
+    </p>
+    <p>                   
+    Quel est le rôle de la balise &lt;hr/>?  
+    </p>
+       <hr/>
+    <p> 
+    Elle insère une ligne séparatrice en html.<br /> Elle est auto-fermante 
+        (ou orphéline)... à ne pas confondre avec la balise &lt;br/> et effectue
+        un retours à la ligne.
+    </p>
+       <!--la mise en valeur -->
+       <!-- STRONG-->
+    <p>
+    Bonjour,ceci est mon premier fichier en html alors <strong>soyez
+             indulgents</strong> SVP!
+    </p>
+        <!-- EM petite mise en valeur-->
+    <p>
+    Bonjour,ceci est mon premier fichier en html alors <em>soyez 
+          indulgents</em> SVP!  
+    </p>
+    <!--MARK fait ressortir visuellement la portion de texte selectionné-->
+    <p> 
+    Bonjour ceci est mon premier fichier en html alors <mark> soyez indulgents</mark> SVP!
+    </p>
+    <!-- Les listes-->
+    <h2><strong><em><mark>Bahaeddine Rabhi </mark></em></strong></h2>
+
+    <!-- Les listes-->
+    <!-- non ordonnée (à puces)-->
+    <ul>
+        <li>Guépard</li>
+        <li>Poisson</li>
+        <li>Dauphin</li>
+        <li>Chien</li>
+    </ul>
+
+     <!-- ordonnée (numérotée)-->
+        <ol>
+        <li>Guépard</li>
+        <li>Poisson</li>
+        <li>Dauphin</li>
+        <li>Chien</li>
+        </ol>
+
+ <!-- Les couleurs--<
+    <p style="color:crimson">H</p>
+    <p style="color:lightseagreen">T</p>
+    <p style="color:darkgreen">M</p>
+    <p style="color:navy">L</p>
+    <br />
+    <p style="color:#dc143c">H</p>
+    <p style="color:#20b2aa">T</p>
+    <p style="color:#006400">M</p>
+    <p style="color:#000080">L</p>
+<!-- La couleur de fond-->
+    <p style="background-color:red">Bonjour</p>
+    <p style="background-color:green">Hello</p>
+    <p style="background-color:blue; color:yellow">Bongiorno</p>
+
+    <!-- Les liens-->
+        <!-- Pour changer un fichier-->
+        <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="css/nav_footer.css" type="text/css" />
+        <link rel="stylesheet" href="css/style_content.css" type="text/css" />
+        <!-- Pour accéder à une URL (site web) -->
+        <a href="http://colorhunt.co/">Site web color hunt</a>
+
+    <!-- Les <images-->
+    <img src="image/bengal.jpg" alt"">
+    <img src="image/image.jpg"  alt=""">
+
+    </body>
+    </html>
+
+    </body>
+</html>
