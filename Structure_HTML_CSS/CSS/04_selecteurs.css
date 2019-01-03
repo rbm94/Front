@@ -1,0 +1,52 @@
+body{
+    font-size: 25px; /*Taille de la police*/
+}
+h1{
+    background-color: cornflowerblue;
+    color: black;
+}
+section{
+    color: blueviolet; /* tous les "p" à l'interieur de la balise "section"*/
+}
+section p:first-child{
+    color:grey; /*Le premier "p" */
+}
+section p:last-child{
+    color: blue;
+}
+section p:nth-child(even){
+    color: cornflowerblue; /*cible les "p" pairs */
+}
+section p:nth-child(odd){
+    color: rgb(116, 25, 201); /*cible les "p" impairs*/ 
+}
+section p:nth-child(3),section p:nth-child(10){
+    color:red; /*Je cible les "p" 3 et 10 */
+}
+.zone1{/*^pour cibler une classe en CSSon met un point*/
+color: blueviolet;
+}
+.zone2{
+    color: cadetblue;
+}
+.lime{
+    color: green;
+    font-size: 45px;
+}
+#zone3{ /*Pour cibler l'ID en CSS on met in "#" */
+background-color: darkslategrey;
+}
+#zone3:after{
+    content:" rajouté après" ;
+}
+#zone3::before{
+    content: " Le B";
+    background-color: darkviolet;
+}
+li{
+    background-color:orchid; 
+}
+li:nth-child(2){
+    background-color: black;
+    color: white;
+}

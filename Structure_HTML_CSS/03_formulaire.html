@@ -1,0 +1,42 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="css/03_formulaire.css">
+            <title>Formulair</title>
+        </head>
+        <body>
+            <!--je déclare mon formulaireavec la FORM -->
+            <form>
+                <label for="Pseudo">Pseudo *</label>
+                <input id="Pseudo"type="text" name="Pseudo" placeholder="TitiVitry">  <required><br <!-- required indique que le champ doit être renseigné-->
+                    <!--Mot de passe-->
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" placeholder="Mot de passe"required><br>
+            <!--E-mail-->
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="email"><br>
+            <!--Les fichiers-->
+            <label for="photo">photo</label>
+            <input type="file" name="photo"><br> 
+            <!--cases à cocher -->
+            <label for="question">Quel destination choisissez-vous ?</label>
+            <p>
+            <input type="checkbox"name="question">Chine<br>
+            <input type="checkbox"name="question"checked>Australie<br>
+            <input type="checkbox"name="question">Mars<br>
+            </p>
+            <!--Zone de Texte-->
+            <label for="Commentaire">Commentaires</label>
+            <textarea name="commentaire" cols="80" rows="10"></textarea>
+            <!--rows= nombres de lignes , cols= nombre de colonnes/caractères-->
+
+            <!--Bouton envoi du formulair-->
+            <input type="submit" name="inscription" value="Envoyer"> 
+
+            <input type="reset" name="annuler" value="Annuler">
+            </form>  
+         </body>
+        </html>
