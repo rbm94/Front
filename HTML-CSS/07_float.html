@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/07_float.css">
+    <title>Les 07_float</title>
+</head>
+<body>
+<!--La propriété float indique qu"un élément doit être retiré du flux normal et doit être placé sur le côté droit ou gauche de son connecteur. 
+Le texte et les autres éléments en ligne ( INLINE) entoureront alors l"élément flottant--> 
+<!--Un élément "flottant" est un élément pour lequel la valeur calculée de float est différente de NONE-->
+<!--Float implique l'utilisationd'une position en bloc, cette propriété modifie donc la valeur display dans certain cas.-->
+<!--LEFT: mot clé, indiquant que l'élément doit flotter du coté gauche du blockquote qui le contient-->
+<!--RIGHT:mot clé, qui indique que l'élément doit flotter du coté gauche du blockquote qui le contient-->
+<!--NONE: mot clé, indiquant que l'élémént ne doit pas flotter -->
+<div>
+    <p>Test paragraphe contenant une <span>balise inline</span>
+    </p>
+    <hr>
+    <!--Div boîte{$}*4-->
+    <div class="boite">1</div> 
+    <div class="boite">2</div>
+    <div class="boite">3</div>
+    <div class="boite">4</div>
+    <div class="clear"></div>
+    <!--La propriétéc CLEAR indique si un élément peut être situé a côté d'élément FLOTTANTS qui le précèdent ou s'il doit déplacé vers le bas pour être en dessous de ces éléments. 
+    La propriété CLEAR s'applique aux éléments FLOTTANTS comme aux éléments non-FLOTTANT-->
+    <div class="boite">5</div>
+    <div class="boite">6</div>
+    <div class="boite">7</div>
+    <div class="boite">8</div>
+    <div class="clear"></div>
+
+    <div class="lourd">9</div>
+    <div class="lourd">10</div>
+    <div class="clear"></div>
+
+    <div class="lourd">11</div>
+    <div class="lourd">12</div>
+    <div class="lourd">13</div>
+    <div class="lourd">14</div>
+    <div class="clear"></div>
+
+    <div class="meta">15</div>
+    <div class="meta">16</div>
+    <div class="meta">17</div>
+    <div class="clear"></div>
+
+    <div class="roma">18</div>
+    <div class="roma">19</div>
+    <div class="roma">20</div>
+    <div class="roma">21</div>
+    <div class="roma">22</div>
+    <div class="clear"></div
+        >
+
+    <div class="roma">23</div>
+    <div class="roma">24</div>
+    <div class="roma">25</div>
+    <div class="clear"></div>
+
+</div>
+</body>
+</html>

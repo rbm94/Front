@@ -1,0 +1,73 @@
+body{
+    margin: 0 auto;
+    background-color: lightgray;
+}
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: blue;
+}
+.boite{
+    height:11vh;
+    width: 18vh;
+    padding: 5vh;
+    background:url(https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Naruto%2C_Original_Artwork.jpg/250px-Naruto%2C_Original_Artwork.jpg)no-repeat;
+    border: 5px double orchid; /*taille, couleur de bordure*/
+    margin: 2vh;
+    float: left; /*effet flottant, permet de placer les balises côtes a cote alors que selon le flux du web standard les éléments se placent les uns au dessous des autres  */
+    transition: margin 0.5s;
+}
+.boite:hover{/*La pseudo class: HOVER modifie un affichage au survol de la souris */
+     margin-top: 10vh;
+}
+.clear{
+    clear: both; /*supprime l'effet flottant*/
+}
+p{
+    background-color: blueviolet;
+}
+p span{
+    background-color: #4a148c;
+}
+
+.lourd{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://66.media.tumblr.com/5a7f2b97f9f07c2487eca0cd19379fce/tumblr_os0uex4LhY1v5poz9o2_250.jpg)no-repeat;
+    border-radius: 25%;
+    border: 5px double #790039;
+    margin: 2vh;
+    float:left;
+    transition:margin 0.5s;
+}
+.lourd:hover{
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+}
+.meta{
+    border-right: #4a148c;
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://mforum.ist/data/xfmg/thumbnail/4/4116-cc909fd4f8207905963b727d8f41b8eb.jpg?1516668187)no-repeat;
+    border-radius: 25%;
+    border: 5px double #790039;
+    margin: 2vh;
+    float:right;
+    transition:margin 0.5s;
+}
+.roma{
+     border-right: #4a148c;
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(https://mforum.ist/data/xfmg/thumbnail/4/4116-cc909fd4f8207905963b727d8f41b8eb.jpg?1516668187)no-repeat;
+    border-radius: 25%;
+    border: 5px double #790039;
+    margin: 2vh;
+    float:left;
+    transition:margin 0.5s;
+}

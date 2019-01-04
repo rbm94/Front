@@ -1,0 +1,35 @@
+.contenu{
+background: linear-gradient(to left, #40a497,#6840a4); /*dégradéqui démarre avec la première couleur et fini avec la seconde , de gauche a droite*/
+width: 45em; /*largeur*/
+height:45em; /*hauteur*/
+margin:0 auto; /*pas de marge*/
+border-radius: 50%; /*Je passe d'un caré a un rond*/
+}
+.contenu1{
+    background: linear-gradient(to right,#40a497,#6840a4);
+    width: 45em;
+    height:45em;
+    margin: 0%auto;
+    border-radius: 50%;
+}
+.contenu2{
+    background: linear-gradient(to left, #d81515,#c65111,#fbff44,#6dff4c,#1565c0,#283593,#6a1b9a);
+    width: 45em;
+    height: 45em;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.contenu3{
+    background: linear-gradient(to top,#5c007a,#00227b,#1976d2,#5ddef4);
+    width: 45em;
+    height:45em;
+    margin: 0 auto;
+    border-radius: 65%;
+}
+.contenu4{
+    background: linear-gradient(to top right,#5ddef4,#5c007a,#00227b,#1976d2);
+    width: 45em;
+    height:45em;
+    margin: 0 auto;
+    border-radius: 50%
+}
