@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/05_tableau.css">
-    <title>05_tableau</title>
+    <title>Tableau</title>
+    <link rel="stylesheet" href="css/05_tableau.css">
 </head>
-<body>
-<!--Ouverture du tableau-->
-<table>
-<!--Titre du tableau-->
-<caption>Ventes</caption>
-<!--En-tête-->
-<thead>
-    <!-- Tr = Rangées-->
-    <tr>
-        <!--Dans une rangée il y a tjr une en-tête-->
-   <th>Jour</th>
-   <th>Smartphone</th>
-   <th>Tablette</th>
-   <th>Portable</th>
-    </tr>
-</thead>
-<tfoot>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-</tfoot>
-</table>
 
+<body>
+    <!-- ouverture du tableau -->
+    <table>
+        <!-- titre du tableau (cellules fusionnées) -->
+        <caption>Ventes</caption>
+        <!-- en-tête du tableau -->
+        <thead>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <!-- th = titres ou en-têtes (t = tableau / h = head = tête) -->
+                <th>Jour</th>
+                <th>Smartphone</th>
+                <th>Tablette</th>
+                <th>Portable</th>
+            </tr>
+        </thead>
+        <!-- tfoot = bas/fin du tableau     /!\ les normes W3C mettent la balise tfoot avant celle du coprs du tableau tbody -->
+        <tfoot>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <!-- td = cellules -->
+                <td>Total</td>
+                <td>22</td>
+                <td>26</td>
+                <td>24</td>
+            </tr>
+        </tfoot>
+        <!-- tbody = corps du tableau -->
+        <tbody>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <td>Lundi</td>
+                <td>2</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <td>Mardi</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <td>Mercredi</td>
+                <td>5</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+            <!-- tr = rang (t = tableau / r = row = rangée) -->
+            <tr>
+                <td>Jeudi</td>
+                <td>12</td>
+                <td>10</td>
+                <td>8</td>
+            </tr>
+            <!-- tr = rang (t = tableau / r = rang) -->
+            <tr>
+                <td>Vendredi</td>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>

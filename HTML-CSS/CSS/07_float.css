@@ -10,10 +10,10 @@ div{
 .boite{
     height:11vh;
     width: 18vh;
-    padding: 5vh;
+    padding: 5vh ;
     background:url(https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Naruto%2C_Original_Artwork.jpg/250px-Naruto%2C_Original_Artwork.jpg)no-repeat;
     border: 5px double orchid; /*taille, couleur de bordure*/
-    margin: 2vh;
+    margin: 2vh auto;
     float: left; /*effet flottant, permet de placer les balises côtes a cote alors que selon le flux du web standard les éléments se placent les uns au dessous des autres  */
     transition: margin 0.5s;
 }
