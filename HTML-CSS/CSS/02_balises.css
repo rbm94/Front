@@ -4,18 +4,18 @@
 body{
     background: rebeccapurple;
 }
- header{
+header{
 background-color: grey;
-color: white (couleur du texte)
-height: 100px; (hauteur de mon header)
+color:white; (couleur du texte)
+height: 100px;(hauteur de mon header)
 }
 nav{
-    background-color: blue 
+    background-color: blue;
     height: 60px;
 }
 section {
     background: navy;
- height: 550px   
+ height: 550px;  
 }
 article{
     background-color: #ff5733;
@@ -35,5 +35,5 @@ footer{
     height:100px;
 }
 nav , footer{
-color: purple
+color: purple;
 }

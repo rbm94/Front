@@ -1,0 +1,25 @@
+td{
+   
+    height: 5vh;
+    width: 5vh;
+}
+.casew{
+     border: 1px white;
+    background:rgb(243, 243, 243);
+}
+.casej{
+    border: 1px yellow;
+    background: yellow;
+}
+.caseg{
+    border: 1px gray;
+    background: gray;
+}
+.casen{
+    border:1px black;
+    background: black;
+}
+.caseb{
+    border: 1px solid blue;
+    background: blue;
+}

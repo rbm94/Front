@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frodon</title>
+    <style media="screen">
+        body{
+            background-color: lightgrey;
+        }
+        section{
+            width: 60%;
+            margin: 0 auto;
+        }
+        .black{
+            background-color: #581845;
+        }
+        .brown{
+            background-color: #900c3f;
+        }
+        .light_brown{
+            background-color: #c70039;
+        }
+        .skin{
+            background-color: #f4e5b2;
+        }
+        .pink{
+            background-color: #d6c89c;
+        }
+        .darker_green{
+            background-color: #004b35;
+        }
+        .dark_green{
+            background-color: #007c59;
+        }
+        .green{
+            background-color: #00956b;
+        }
+        .light_green{
+            background-color: #00c78e;
+        }
+        .yellow{
+            background-color: #ffc300;
+        }
+        .cream{
+            background-color: #ffe180;
+        }
+        .light_cream{
+            background-color: #fff8df;
+        }
+        .darker_blue{
+            background-color: #0065bf;
+        }
+        .dark_blue{
+            background-color: #0086ff;
+        }
+        .blue{
+            background-color: #60b3ff;
+        }
+        .light_blue{
+            background-color: #0fd2ff;
+        }
+        .lighter_blue{
+            background-color: #dff0ff;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 4em;
+            height: 4em;
+            /*border: 1px solid;*/
+        }
+ 
