@@ -1,0 +1,36 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+div#conteneur{
+    width: 770px; /*Largeur*/
+    margin: auto;
+    text-align: left;
+    border: 2px solid #AABB44;
+    background: white;
+}
+h1#header{
+    height: 285px;
+    background: url(../img/apple.jpg)no-repeat left top;
+    margin: 0;
+}
+h1#header a{
+    /*on donnes les mêmes dimensions au liens , chose possible grâce à la propriétés display block ; qui transforme le lien en un élément de type block , auquel on peut donner */
+    width: 400px;
+       height: 70px;
+       display: block;
+       background: url ("../img/apple.jpg"no-repeat);
+       left: 350px;
+       top:15 px;
+       text-indent: -5000px; /*Le texte-indent négatif est fait pour pouvoir cacher le texte hors de la page,ce que nous voulons.*/
+   }
+   ul#menu{
+       height: 35px; /*on lui donne une hauteur,correspondant à la taille de l'image utilisée en fond*/
+       margin:0;
+       padding: 0;
+       background: url("../img/bg_menu.gif") repeat-x 0 -25px;
+       list-style: none; /*on cache les puces*/
+}
