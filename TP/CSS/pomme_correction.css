@@ -1,36 +1,96 @@
 body{
-    margin: 10px 0;
-    padding: 0;
-    text-align: center;
-    background: white;
-    font-family: 'Times New Roman', Times, serif;
+ margin: 10px 0;
+ padding:0;
+ text-align: center;
+ background: white;
+ font-family: 'PT Sans', sans-serif;
 }
 div#conteneur{
-    width: 770px; /*Largeur*/
-    margin: auto;
-    text-align: left;
-    border: 2px solid #AABB44;
-    background: white;
+ width:770px; /*largeur*/
+ margin: 0 auto; /*marge automatique qui centre le bloc après l'avoir
+ remonté le plus haut possible dans mon affichage*/
+ text-align: left;/*centre le contenu de mon conteneur*/
+ border:  2px solid #AABB44;/*bordure autour de toute la page*/
+ background: white; /*couleur de fond de mon conteneur*/
 }
 h1#header{
-    height: 285px;
-    background: url(../img/apple.jpg)no-repeat left top;
-    margin: 0;
+ height: 258px;/*hauteur*/
+ background: url("../img/apple.jpg")no-repeat left top;
+ margin: 0:
 }
-h1#header a{
-    /*on donnes les mêmes dimensions au liens , chose possible grâce à la propriétés display block ; qui transforme le lien en un élément de type block , auquel on peut donner */
-    width: 400px;
-       height: 70px;
-       display: block;
-       background: url ("../img/apple.jpg"no-repeat);
-       left: 350px;
-       top:15 px;
-       text-indent: -5000px; /*Le texte-indent négatif est fait pour pouvoir cacher le texte hors de la page,ce que nous voulons.*/
-   }
-   ul#menu{
-       height: 35px; /*on lui donne une hauteur,correspondant à la taille de l'image utilisée en fond*/
-       margin:0;
-       padding: 0;
-       background: url("../img/bg_menu.gif") repeat-x 0 -25px;
-       list-style: none; /*on cache les puces*/
+h1#header a{/*on donne les mêmes dimensions aux liens, chose possible
+ grâce à la propriété display block; dui transforme le lien en un élément
+ de type block, auquel on peut donner des propriétés de taille.*/
+width: 400px;
+height: 70px;
+display: block;
+background: url("../img/title.gif")no-repeat;
+left: 350px;
+top:15px;
+text-indent: -5000px;/*le text-indent négatif est fait pour pouvoir cacher
+le texte hors de la page, ce que nous voulons.*/
+position:  ;
+}
+ul#menu{
+ height: 35px;/*on lui donne une hauteur , correspondant à la taille
+ de l'image utilisée en fond*/
+ margin:0;
+ padding:0;
+ background: url("../img/bg_menu.gif")repeat-x 0 -25px;
+ list-style: none;/*on cache les puces*/
+}
+ul#menu li{
+ float:left;/*on rend les "li" flottants pour pouvoir les
+ afficher horizontalement*/
+ text-align: center;/*on centre le texte*/
+}
+ul#menu li a{/*C'est sur les liens que le gros du travail est effectué*/
+width: 130px;
+line-heigh  : 25px;/*hauteur de la ligne*/
+font-size: 1.2em;/*taille de la police*/
+font-weight: bold;/*mise en accentuation gras de la police*/
+letter-spacing: 2px;/*espacement des lettres*/
+color: #fff; /*couleur du texte*/
+display: block;/*nous pouvons dimensionner les "a" grâce à la propriété
+display: block*/
+text-decoration: none;/*décoration du texte*/
+border-right:2px solid #dea; /*bordure*/
+}
+ul#menu li a:hover{/*on décale l'image de fond au passage de la souris*/
+background: url("..img/bg_menu.gif")repeat-x 0 0;
+}
+div#contenu{
+padding: 0 30px 0 100px;/*haut droite bas gauche*/
+background-image: url("../img/bg_page.gif");
+background-repeat: no-repeat;
+background-position: 15px 15px /*crée un espace à gauche et à droite de l'image*/
+}
+div#contenu h2{/*mise en forme de notre h2*/
+    padding-left: 25px; /*on décale le text en fonction de l'image */ 
+    line-height: 25px; /* on décale le text en fonction de l'image ave un inter-line*/
+    font-size: 1.4em;
+    background:url(../img/little_apple.gif)no-repeat;
+    color: #9b2;
+    border-bottom: 1px solid #9b2;
+}
+div#contenu h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left:3px solid #9b2;
+    color: #9b2;
+}
+div#contenu p{ /*Paragraphe plus propre*/
+    text-align: justify; /*alignement justifié*/
+    text-indent: 2em; /*indentation supèrieur à l'état normal pour aérer le tout*/
+    line-height: 1.7em; /*Hauteur de la ligne supèrieur à l'état normal pour aérer le tout*/
+}
+
+p#footer{
+    /*pied page*/
+    margin: 0;
+    padding-right:10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
 }
