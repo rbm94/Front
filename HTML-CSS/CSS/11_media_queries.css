@@ -1,0 +1,28 @@
+.zone-adaptative{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    font-family: cursive;
+}
+@media(min-width:768px){
+    .zone-adaptative{
+        width: 750px;
+        background: orange;
+        color: black;
+    }
+}
+@media(min-width:992px){
+    .zone-adaptative{
+        width:970px;
+        background:rgb(52, 52, 150);
+        color: aqua;
+    }
+}
+@media(min-width:1200px){
+    .zone-adaptative{
+        width:1170px;
+        background:aqua;
+        color: Purple;
+    }
+}
+

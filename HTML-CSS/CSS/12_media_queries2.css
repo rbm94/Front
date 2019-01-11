@@ -1,0 +1,117 @@
+/***************************************************************Réglage Generale******************************************************************/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border : 0.3vh solid;
+}
+header{
+    height: 6vh;
+    background: blue;
+    padding: 1vh;
+}
+/*vh pour gérer la responsive des éléments en hauteur/
+/vw pour gérer la responsive des éléments en largeur*/
+nav{
+    height:3vh;
+    background: red;
+    text-align: center;
+    font-size:2vw;
+    color: #fff;
+}
+
+/*"NAV a"cible les liens du menu, ils n'ont pas de taille donc ils occupent la place de leur contenu */
+nav a:hover{
+    background: #73cec8;
+    text-decoration: none;
+    /*efface le soulignement des liens <a></a>*/
+    padding: 0.5% 0.8%;
+}
+.m1,.m2,.m3,.m4{
+    height:20vh;
+    width: 38%;
+    padding: 5%;
+    margin: 1%;
+    float: left;
+}
+.m1{
+    background: orange;
+}
+.m2{
+    background: green;
+}
+.m3{
+    background: yellow;
+}
+.m4{
+    background: #73cec8;
+}
+
+footer{
+    height: 6vh;
+    background: #73cec8;
+}
+/**/
+@media(max-width:500px){
+    header{
+        height: 6vh;
+        background: plum;
+    }
+    nav{ 
+        height: 3vh;
+        background:#046380 ;
+
+    }
+    .m1,.m2,.m3,.m4{
+        height: 20vh;
+        width: 86%;
+        margin: 0 auto;
+    }
+    
+    .m1{
+        background: orange;
+    }
+    .m2{
+        background: rgb(132, 30, 200);
+    }
+    .m3{
+        background: yellow;
+    }
+    .m4{
+        background: #73cec8;
+    }
+}
+
+
+@media(max-width:768px){
+    header{
+        height: 7vh;
+        background: plum;
+    }
+    nav{ 
+        height: 3.5vh;
+        background:#046380 ;
+
+    }
+    .m1,.m2,.m3,.m4{
+        height: 20vh;
+        float: left;
+    }
+    
+    .m1{
+        background: orange;
+    }
+    .m2{
+        background: rgb(132, 30, 200);
+    }
+    .m3{
+        background: yellow;
+    }
+    .m4{
+        background: #73cec8;
+    }
+}
+footer{
+    height: 7vh;
+    background: gold;
+}
