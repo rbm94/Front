@@ -1,0 +1,138 @@
+*{
+ margin: 0;
+ padding:0;
+/* mini reset*/ 
+}
+/*importer des polices*/
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,700");
+
+/*Les balise*/
+body{
+    font-family: "cormorant garamont", serif;
+    background-color: #f6f6f7;
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+     width: 80%;
+    margin:10 auto 5%;
+}
+section{
+    width: 100%;
+    display: inline-block
+}
+footer{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20%;
+    font-weight: bold;
+}
+footer p{
+    text-transform: uppercase; /*met le texte en majuscule*/
+}
+footer em{
+    font-size: 2.5vw;
+    font-style: italic;
+    line-height: 5rem;
+}
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /*règle de l'éritage en css : l'enfant hérite des propriétés de son parent*/
+}
+/*Les ID*/
+#gout{
+    margin-bottom: 10%;
+}
+/*Les classes*/
+.titre{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+header h2.titre, footer h5.titre{
+    color: #cf884d;
+    font-weight: bold;
+    font-size: 0.65em;
+}
+footer h5.titre{
+    color: black;
+    font-size: 1rem;
+    padding: 3.5rem 0; /*haut et bas - gauche et droite*/
+    background-image: url("../Image/img/plan.png") no-repeat;
+    background-position: center;
+}
+.plate{
+    margin: 0;
+    width: 49.94%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+#salle .plate:first-child, #service .plate:last-child,#dressage .plate:first-child
+#gout .plate:last-child{
+    padding: 3%;
+    width: 43.3%;
+}
+.plate img{
+    width: 100%;
+    height: auto;
+}
+/*agencement du texte*/
+.plate h3{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+.plate p{
+    font-style: italic;
+    font-size: 2.5vw;
+}
+.plate .plate:last-child{
+    margin-bottom: 5%;
+}
+.plate span{
+    color:#f6f6f7;
+    background-color: #383838;
+    text-transform: uppercase;
+    font-size: 2vw;
+    padding: 1% 7% 1% 2%;
+    margin-top: 2%;
+}
+.plate i{
+    font-size: 1.5vw;
+    margin: 0 0.5%;
+}
+#plat .plate{
+    width:49%;
+    text-align: right;
+}
+#plat .plate:last-of-type{
+    position: relative;
+    right: 15%;
+}
+#plat .plat img{
+    border-radius: 50%;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#plat .plate h3{
+    font-style: italic;
+    text-transform: inherit;
+    font-size: 2vw;
+}
+#plat .plat p{
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.9vw;
+    letter-spacing: 0.1rem;
+}
