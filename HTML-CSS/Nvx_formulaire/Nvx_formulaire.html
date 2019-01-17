@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/Nvx_formulaire.css">
+    <title>Nvx_formulaire</title>
+</head>
+<body>
+    <div class="container">
+
+        <form>
+            <label for="Pseudo">Pseudo *</label>
+            <input type="text" name="Pseudo" placeholder="Pseudo">
+            <required><br>
+                
+                <label for="mdp">Mot de passe</label>
+               <input type="password" id="#" name="#" placeholder="password" required> <br>
+                
+                <label for="email">email</label>
+                <input type="email" name="email" placeholder="email"><br>
+                
+                <label for="file">fichier</label>
+                <input type="file" name="photo"><br>
+                
+                <label for="file">fichier</label>
+                <select name="#" id="#">
+                    <optgroup>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </optgroup>
+                </select>
+                <br>
+
+                <p>
+                    <label for="question">choisir</label>
+                    <input type="checkbox" name="question">1
+                    <input type="checkbox" name="question">2
+                    <input type="checkbox" name="question">3
+                </p>
+               
+                <p>
+                    <label for="civilite">civilité</label>
+                    <input type="radio" name="civilite" value="M." checked="checked"> M.
+                    <input type="radio" name="civilite" value="Mme"> Mme
+                </p>
+                
+                <label for="ville">Ville</label>
+        <input id="Ville" type="text" placeholder="name city">
+        <datalist id="france">
+            <option value="#">paris</option>
+            <option value="#">choisy le roi </option>
+            <option value="#">vitry sur seine</option>
+        </datalist>
+        <required><br>
+            
+            <label for="code postal">CP</label>
+            <input id="CP" type="text" placeholder="CP" pattern="[0-9]{5}">
+            <required><br>
+                
+                <label for="Adresse">Adresse</label>
+                <textarea name="Adresse" cols="20" rows="10"></textarea><br>
+                
+                <input type="submit" name="inscription" value="Envoyer">
+                
+                <input type="reset" name="annuler" value="Annuler"><br><br>
+
+            <label for="jauge">jauge</label>
+            <input type="range" id="jauge" min="0" max="50" value="25"><br>
+            <br>
+            
+            <label for="couleur">couleur</label>
+            <input type="color">
+            <br>
+            <input type="submit" name="inscription" value="s'inscrire">
+            <input type="reset" name="effacer" value="recommencer">
+
+                
+                
+        </form>
+    </div>
+</body>
+</html>
