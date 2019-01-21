@@ -1,0 +1,109 @@
+body{
+    margin: 0 auto;
+    background-color: lightslategray;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+h1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 105px;
+    color: rgb(89, 201, 201);
+}
+/*Fin du titre */
+
+.meta{
+    height: 11vh;
+    width: 18vh;
+    padding: 4vh;
+    background: url(https://66.media.tumblr.com/5a7f2b97f9f07c2487eca0cd19379fce/tumblr_os0uex4LhY1v5poz9o2_250.jpg)no-repeat;
+    border-radius: 0;
+    border: 5px double lightblue;
+    margin: 2vh;
+    transition: margin 0.5s;
+    float: left;
+}
+.meta:hover{
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+}
+.meta:hover{
+    border-radius: 50%;
+}
+
+/*Fin meta*/
+
+.roma{
+    height: 11vh;
+    width: 18vh;
+    padding: 4vh;
+    background: url(https://66.media.tumblr.com/5a7f2b97f9f07c2487eca0cd19379fce/tumblr_os0uex4LhY1v5poz9o2_250.jpg)no-repeat;
+    border-radius: 0;
+    border: 5px double lightblue;
+    margin: 2vh;
+    transition: margin 0.5s;
+    float: left;
+}
+.roma:hover{
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+}
+.roma:hover{
+    border-radius: 50%;
+}
+
+/*Fin roma*/
+
+
+.beta{
+    height: 11vh;
+    width: 18vh;
+    padding: 4vh;
+    background: url(https://66.media.tumblr.com/5a7f2b97f9f07c2487eca0cd19379fce/tumblr_os0uex4LhY1v5poz9o2_250.jpg)no-repeat;
+    border-radius: 0;
+    border: 5vh  solid lightblue;
+    margin: 2vh;
+    transition: margin 0.5s;
+    float: left;
+}
+.beta:hover{
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+}
+.beta:hover{
+    border-radius: 50%;
+}
+/*Fin Beta*/
+
+.rota{
+     height: 11vh;
+    width: 18vh;
+    padding: 4vh;
+    background: url(https://66.media.tumblr.com/5a7f2b97f9f07c2487eca0cd19379fce/tumblr_os0uex4LhY1v5poz9o2_250.jpg)no-repeat;
+    border-radius: 0;
+    border: 5vh solid lightblue;
+    margin: 2vh;
+    transition: margin 0.5s;
+    float: left;
+}
+.rota:hover{
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+}
+.rota:hover{
+    border-radius: 50%;
+}
+/*Fin hover*/

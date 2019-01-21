@@ -1,0 +1,19 @@
+#container{
+    width: 960px;/*valeur habituelles pour les sites */
+    background-color: darkgray;
+    margin: 0 auto; /* centrage automatique */
+    padding: 30px;
+    box-sizing: border-box black;
+}
+
+
+
+.zonea, .zoneb{
+    background: lightblue;
+    height: 150px;
+    width: 450px;
+    border: 2px solid purple;
+    margin: 10px 10px;
+    display: inline-block; /*Affichage de deuc block alligné / INLINE seul crée 2 cadres qui entoure uniquement le contenucomme le surlignage , block seul affiche 2 block l'un sur l'autre*/
+    vertical-align: middle; /*Centre verticalement les 2 blocks*/  
+}
