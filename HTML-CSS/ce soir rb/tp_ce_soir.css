@@ -1,0 +1,73 @@
+*{
+ margin: 0 auto;
+ padding:0 auto;
+}
+
+body{
+    font-family: "cormorant garamont", serif;
+    width: 80%;
+    background-color: rgba(7, 136, 114, 0.993); 
+    margin: auto;
+}
+.container{
+    width:52.5%;  
+    background-image: url(../Image/imgtp2/woodPlank.jpg);
+}
+header{
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;  
+}
+
+nav{
+    width: 50%;
+    height:10%;
+    float:right;
+}
+.image{
+    margin: 35%;
+}
+
+nav ul li{
+    display: inline-block ;
+    height: 15px;
+    float: right;   
+    word-spacing: 3px;
+}
+#arti{
+    background: url(../Image/imgtp2/pattern.jpg);
+    
+}
+#soap{
+    background: url(../Image/imgtp2/pattern.jpg);
+}
+
+#moule{
+    background: url(../Image/imgtp2/pattern.jpg);
+}
+.dur{
+    background: url(../Image/imgtp2/pattern.jpg);
+    width:100%;
+}
+.titre,  .h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: left;
+    color: mediumslateblue;
+}
+.txt1 {
+    text-align: justify;
+    float:left;
+
+}
+.moule img{
+    width: 50%;
+    float:right;
+}
+
+
+
+/*.h3{
+    font
+}*/
