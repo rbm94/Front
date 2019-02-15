@@ -1,0 +1,80 @@
+/* 
+1- Je fais mon zoning
+*/
+.container-fluid {
+    /* Je règle la dimension de mon espace de stockage <div class="container-fluid "></div>*/
+    /* background: rgba(55, 55, 206, 0.719); */
+    height: 200vh;
+    width: 98vw;
+    background: url("../img/background.png");
+}
+
+nav {
+    /* Je règle la dimension de ma barre de menu <nav></nav> */
+    background: #C55394;
+    height: 5vh;
+}
+
+header {
+    /* Je règle la dimension de mon <header></header> */
+    /* background: rgb(40, 7, 158); */
+    height: 15vh;
+    /* background: url("../img/rainbow.png") no-repeat;
+    margin-left: 31vw; */
+}
+
+.container {
+    /* Je règle la dimension de mon <main></main> */
+    background:lightgray;
+    height: 150vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+.unicorn{
+    height: 20vh;
+}
+header img{
+    height:25vh;
+    margin: 0 auto ; 
+    position: relative;
+    bottom: 11vh;
+    left: 38vw;
+}
+footer {
+    /* Je règle la dimension de mon <footer></footer> */
+    background: #C55394;
+    height: 5vh;
+    margin-top: 20vh;
+}
+/* header h2{
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 35px;
+} */
+.clear{
+    clear: both;
+}
+nav h3{
+    float: left;
+}
+nav ul{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+.clear{
+    clear: both;
+}
+.img img{
+     display: flex;
+    height: 23vh;
+    margin: 38px;
+    float: left;
+}
+
+#map{
+    float: left;
+}

@@ -1,0 +1,796 @@
+*{
+  box-sizing: border-box;/*ça bloque l'élément, le recentre est ça
+  fait une marge*/
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1{
+  font-size: 45px;/*la taille de la police*/
+  color: white;/*couleur de la police*/
+  margin-top: 50px;/*définit l'espace vertical pour la marge appliquée
+  en haut de l'élément*/
+  font-family: 'Amatic SC, cursive';/*la famille de la police, le nom*/
+  text-align: center;/*Alignement du texte dans la page*/
+  font-weight: 400; /*largeur de la police*/
+}
+h2{
+  font-size: 50px;
+  color: crimson;
+  padding:20px;/*marge intérieur*/
+  font-weight: bold;/*épaisseur en gras*/
+  font-family: 'Amatic SC', cursive;
+}
+h3{
+  font-size: 22px;
+  color: #2c3e50;
+  padding: 15px;
+}
+h4{
+  text-align: center;
+  margin-top: 30px;
+  color: #2c3e50;
+  font-size: 20px;
+}
+h5{
+  font-size: 90px;
+  color:purple;
+  padding: 20px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+blockquote{/*indique que le texte contenu dans l'élément est une
+citation longue*/
+font-style: italic;
+font-size: 120%;
+}
+strong{/* indique que le texte a une importance particulière
+  ou un certain sérieux voir un caractère urgent*/
+  font-weight: bold;
+}
+main{
+  height: 10000000px;
+  background:mistyrose;
+  margin: 0 auto;/*définit la taille des marges sur les quatres côtés
+  de l'élément*/
+  width: 1000px;/*largeur*/
+}
+aside{
+  height: 300px;  /*hauteur*/
+}
+section{
+  margin-top: 50px;
+  padding: 20px;
+}
+footer{
+  background: mistyrose;/*couleur de fond*/
+  height: 30px;
+}
+/*************HEADER*************/
+header{
+  background-color: SLATEGRAY;
+  height: 175px;
+}
+#logo{/*dièse=id dans le html*/
+  width:25%;
+  float:left;/*indique qu'un élément doit-être retiré du flux normal
+  et doit-être placé sur le côté droit ou sur le côté gauche de son conteneur*/
+  text-align: center;
+  padding: 15px;
+}
+#slogan{
+  width:50%;
+  float: left;
+}
+#rs{
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+#rs a{
+  font-size: 30px;
+  color: white;
+  display: block;/*change leur type inline en block pour les
+  mettre les uns en dessous des autres.*/
+  text-align: right;
+  padding: 15px 30px 0 0;
+  text-decoration: none;/*utilisé pour décorer le texte en ajoutant
+  une ligne pouvant être positionnée sous, sur ou à travers le texte
+  (none= aucune décoration)*/
+}
+#rs a:hover{/*permet de spécifier l'apparance d'un élément au moment
+ou l'utilisateur le survole avec la souris.*/
+  font-size: 60px;
+  transition: 2s;
+}
+/***************FIN HEADER **************/
+/******************NAV*******************/
+nav{
+  background: mistyrose;
+  border-bottom: 4px solid slategray;/*propriété qui définit la bordure
+  du côté bas d'un élément.*/
+  text-align: center;
+  padding: 17px;
+}
+nav a{
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border: 1px solid pink;/*permet de définir les propriétés liées à la
+  bordure*/
+  padding: 6px 9px;
+  border-radius: 7px;/*permet de définir des côtés arrondis pour
+  la bordure d'un élément*/
+  margin: 0px 8px;
+}
+nav a:hover{
+  background: pink;
+  transition: 2s;
+}
+.activ{/*pour appeler une class en css on utilise le"."*/
+  background: pink;
+}
+/************** NAV ***************/
+/********** DEBUT PAGE TEXTE *********/
+.roboto p{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+/************FIN PAGE TEXTE***********/
+/************************PAGE SELECTEURS***********/
+.select p{
+  color : red;
+}
+.select p:first-of-type{
+  color:purple;
+}
+.select p:last-of-type{
+  color:purple;
+}
+.select p:nth-of-type(5), .select p:nth-of-type(6){
+  color: black;
+}
+.select div:not(.zoneB){/*toutes les div du parent .select seront en gras
+  not(.zoneB) donc sauf la zoneB*/
+  font-weight: bold;
+}
+.select .zoneA{
+  color: red;
+}
+.select .zoneB{
+  color:#963;
+}
+.select .zoneB .couleurBleu{
+  color: blue;
+}
+.select #zoneC{
+  color: #98f32f;
+}
+.select #zoneD span{
+  /*le span prendra en compte aussi .couleurBleu sauf pour la couleur car on l
+  aura déjà definie*/
+  color: #32ff32;
+}
+/*************FIN PAGE SELECTEURS**************/
+/****************DEBUT PAGE IMAGES*************/
+.imageFond{
+  background: black url(../img/fond.jpg)no-repeat;
+  background-size: cover;
+}
+.imageFond p{
+  width:75%;
+  margin: 100px auto 200px auto;
+  background: rgba(255,255,255,0.60);
+  padding: 20px;
+  font-size: 120%;
+  border-radius: 10px;
+}
+/**Tour eiffel**/
+img[src="img/toureiffel.jpg"]{
+    margin: auto;
+    width: 250px;
+    display: block;
+    border: 5px solid white;
+    box-shadow: 4px 4px 15px pink;
+}
+
+.rotationImg{/**image type inline-block , elle comportes des marges par défaut.Pour supprimer cette marge , ouvrir commentaire apès 1ere
+  photo et la fermer avant 2eme photo ou enlever les espaces en HTML**/
+text-align: center;
+}
+.image{
+  margin: 20px;
+  border: 5px solid #2c3e50;
+  box-shadow: 12px 12px 6px 6px #2c3e50;
+  transition: 1s;
+}
+.image:hover{
+  transform: rotate(7deg);
+}
+.rotation360 {
+  transform: rotate(-360deg);
+}
+
+/***Page liste***/
+.fruit{
+       /*je cible le ul qui a pour classe fruit*/
+       list-style: none; /*enleve les puce dans une liste*/
+   }
+  .fruit li{
+       display: inline-block;
+       margin: 15px;
+   }
+  li i {
+       color: tomato;
+       font-size: 90%;
+   }
+   .imbrique, .imbrique ul{
+       padding-left: 15px; /*marge interieur gauche*/
+       margin: 5px;
+       cursor: pointer;
+   }
+  .asie , .eu{
+   margin-top: 20px;
+   list-style: none;
+   font-size:20px;
+}
+.asie ul li:hover{
+  color: lightslategray;
+  font-size: 30px;
+  transition: 2s;
+}
+.asie span:hover{
+  color:mediumslateblue;
+  font-size: 30px;
+  transition: 1s;
+}
+.eu span:hover{
+   color: mediumslateblue;
+  font-size: 30px;
+  transition: 1s;
+}
+
+.eu ul li:hover{
+  color: lightslategray;
+  font-size: 30px;
+  transition: 2s;
+}
+.eu span, .asie span{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.brr{list-style: none;}
+
+
+/****Ma page tableau****/
+.tableaux{
+  margin: 0 auto;
+  width: 80%;
+  border: 3px solid #2980b9;
+  border-collapse:collapse;
+}
+.tableaux thead, .tableaux tfoot{
+  background-color: #d0e3fa;
+}
+th{
+  border: 1px solid #2980b9;
+  width: 25%;
+  padding: 4px;
+}
+td{
+  border: 1px solid #6495ed;
+  font-size: 100%;
+  padding: 5px;
+  text-align: center;
+}
+.sec{
+  padding-bottom: 20px;
+}
+
+/****Les positions****/
+ .centre{
+    margin: 0 auto;   /*permet de centrer mon élément*/ /*0 correspond en haut et en bas et AUTO droite et gauche*/
+    width: 500px; /*pour le centrer lui donner une taille comme il est block il prends toute la largeur*/
+    height: 200px;
+    background: #3cc;
+    color: white;
+    text-align: center;
+    line-height: 180px;
+    font-size: 50px;
+    font-style: italic
+}
+.absolute{ /*element positionné par rapport au body et se positionne par dessus les autres éléments*/
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: #FF6600;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 150px;
+}
+.relative{
+    background: red;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
+}
+.relative div{
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: blue;
+}
+button{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 350%;
+    color: slategray;
+
+}
+button:hover{
+    color: pink;
+    transition: 1s;
+}
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background: #f1684e;
+    color: #efe94b;
+    font-weight: bold;
+}
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: #383746;
+    color: #efe94b;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.cent{
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: #3cc;
+    color: #efe94b;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carre{
+  width: 170px;
+  height: 170px;
+  background: #2980b9;
+  border: 3px solid #2c3e50;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  color: lavender;
+  line-height: 150px; /**inter lignes **/
+  box-shadow: 4px 4px 4px #383746;
+}
+.carre:hover{
+  background: #2980b9;
+  border: 15px solid #2c3e50;
+  transition: 1s;
+  transform: rotate(45deg);
+  border-radius: 85px;
+}
+/**.carreclear{
+  width: 170px;
+  height: 170px;
+  background: #2980b9;
+  border: 3px solid #2c3e50;
+  margin: 10px;
+   text-align: center;
+  font-size: 20px;
+  color: lavender;
+  line-height: 150px; /**inter lignes 
+  box-shadow: 4px 4px 4px #383746;
+  float: left; 
+}**/
+
+.clear{ 
+  clear: both;
+  
+}
+
+/**float2**/
+
+
+.float2{
+margin: 0 auto;
+width: 100%;
+}
+.rect{
+  height: 40px;
+  background: #3cc;
+}
+
+.c1, .c2, .c3, .c4{
+  width: 25%;
+  height: 250px;
+  float: left;
+}
+
+.c1{
+  background: #6495ed;
+}
+.c2{ 
+  background: #2980b9;
+}
+.c3{
+  background: #137cc2;
+}
+.c4{
+  background: #2e5377;
+}
+.rectclear{
+  clear: both;
+}
+
+/****Ma page ZONING****/
+
+
+#zoning1{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid black;
+}
+#zoning1 header{
+    height: 80px;
+    background: DARKSEAGREEN;
+
+}
+#zoning1 aside{
+    width: 30%;
+    height: 500px;
+    background: LIGHTSALMON;
+    float: left;
+}
+#zoning1 section{
+    width: 70%;
+    height: 500px;
+    background: ROSYBROWN;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#zoning2{
+    margin: 0 auto;
+    width: 800px;
+    background: black;
+    border: 2px solid black;
+}
+#zoning2 header{
+    height: 80px;
+    background: DARKSEAGREEN;
+}
+#zoning2 section{
+    width: 60%;
+    height: 500px;
+    background: ROSYBROWN;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+#zoning2 aside{
+    width: 20%;
+    height: 500px;
+    background: LIGHTSALMON;
+    float: left;
+}
+
+#zoning3{
+    margin: 0 auto;
+    width: 800px;
+    background: black;
+    border: 2px solid black;
+}
+#zoning3 div{
+    width: 50%;
+    height: 500px;
+}
+.divgauche{
+    background: ROSYBROWN;
+    float: left;
+}
+.divdroite{
+    background: LIGHTSALMON;
+    float: left;
+}
+#zoning3 footer{
+    height: 80px;
+    background: DARKSEAGREEN;
+
+    width: 100%;
+}
+#zoning4{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid black;
+    background: white;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+#zoning4 header{
+    height: 80px;
+    background:  DARKSEAGREEN;
+}
+#zoning4 nav{
+    height: 50px;
+    background: PALEGREEN;
+    border-bottom: solid 5px LIGHTSALMON;
+}
+#zoning4 section{
+    margin: 20px;
+    padding: 0;
+    background: LIGHTSALMON;
+    height: 500px;
+}
+#zoning4 footer{
+    background: rosybrown;
+    height: 60px;
+}
+#zoning5{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid black;
+    background: white;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+
+}
+#zoning5 header{
+    height: 80px;
+    background: LIGHTSEAGREEN;
+}
+#zoning5 nav{
+    height: 50px;
+    background: PALEGREEN;
+    border: none;
+}
+#zoning5 section{
+    margin: 20px;
+    padding: 0;
+    background: url(../img/fond.jpg);
+}
+#zoning5 footer{
+    background: rosybrown;
+    height: 60px;
+}
+
+.divA, .divB, .divC, .divD{
+    float: left;
+    height: 250px;
+    width: 50%;
+}
+.divA{
+    background: url(../img/fond.jpg);
+    float: left;
+
+}
+.divB{
+    background: YELLOWGREEN;
+    float: left;
+
+}
+.divC{
+    background: STEELBLUE;
+    float: left;
+
+}
+.divD{
+    background: TOMATO;
+    float: left;
+
+}
+.divA:hover, .divB:hover, .divC:hover, .divD:hover{
+    transform: rotate(360deg);
+    border-radius: 300px;
+    transition: 3s;
+    background: transparent;
+}
+
+
+
+#zoning6{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+
+}
+#zoning6 header div{
+    height: 175px;
+    float: left;
+}
+#zoning6 header .h1, .h3{
+    width: 25%;
+    background: pink;
+}
+#zoning6 header .h2{
+    width: 50%;
+    background: PEACHPUFF;
+}
+#zoning6 nav{
+    height: 50px;
+    background: DARKKHAKI;
+    border:none;
+}
+#zoning6 aside{
+    width: 20%;
+    height: 600px;
+    background: CORAL;
+    float: left;
+}
+#zoning6 section{
+    margin: 0;
+    padding: 0;
+    width:80%;
+    float: left;
+
+}
+#zoning6 .dA, .dB{
+    float: left;
+    width: 50%;
+    height: 230px;
+}
+#zoning6 .dA{
+    background: LIGHTGREEN;
+
+}
+#zoning6 .dB{
+    background: MEDIUMORCHID;
+}
+#zoning6 .slide{
+    height: 230px;
+    background: LIGHTSEAGREEN;
+    width: 80%;
+    float: left;
+}
+#zoning6 .dC, .dD{
+    height: 140px;
+    width: 25%;
+    float: left;
+}
+#zoning6 .dC{
+    background: pink;
+}
+#zoning6 .dD{
+    background: rosybrown;
+}
+#zoning6 footer{
+    height: 60px;
+    background: DARKSLATEBLUE;
+
+}
+
+/****Ma Liens & Menu****/
+
+#liens, #menus{
+
+width: 100px;
+height:35px;
+display : inline-block;
+border-radius: (35deg);
+background-color: #2980b9;
+color: white;
+font-size:18px;
+text-align: center;
+line-height: 15px; /**inter lignes **/
+border: 3px solid #2c3e50;
+box-shadow: 4px 4px 4px #383746;
+box-shadow: 0px 1px 24px 0px #383746;
+border-radius: 7px;
+}
+
+#menu2{
+padding: 0 auto;
+ width: 155px;
+height:35px;
+display : inline-block;
+border-radius: (35deg);
+background-color: #2980b9;
+color: white;
+font-size:18px;
+text-align: center;
+line-height: 15px; /**inter lignes **/
+border: 3px solid #2c3e50;
+box-shadow: 0px 1px 24px 0px #383746;
+border-radius: 7px;
+box-align: center;
+
+}
+
+#menu2:hover{
+font-size: 130%;
+transition: 2s;
+
+}
+
+#menus:hover{
+font-size: 130%;
+transition: 2s;
+}
+
+#liens:hover{
+font-size: 130%;
+transition: 2s;
+}
+
+
+.lienn{
+  text-decoration: none;
+  color: lightblue;
+}
+
+
+.br{
+  border-bottom:#2c3e50 3px;
+  border-top: 3px #2c3e50; 
+  padding-bottom: 10%;
+  padding-left: 35%;
+}
+
+#menu nav{
+  background: transparent;
+  border: none;
+  
+}
+#menu ul{
+  list-style: none;
+  text-align: center;
+}
+#menu ul li{
+  display: inline-block;
+}
+#menu nav a{
+  padding: 10px;
+  color: #137cc2;
+  text-decoration: none;
+  background: white;
+}
+#menu nav a:hover{
+  background: #2e5377;
+  transition: 1s ease-in-out;
+}

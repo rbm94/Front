@@ -1,0 +1,48 @@
+ #container{
+    margin: 0 auto;
+    height: 250vh;
+    width: 69vw;
+    border: 1px solid black;
+}
+.header{
+    
+    width: 100%;
+    height: 200px;
+    border: 1px solid purple;
+
+}
+.navi{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: gray;
+}
+.b1{
+    height: 50px;
+    width: 140px;
+}
+.b2{
+    height: 50px;
+    width: 200px;
+}
+.rr{
+    float: right;
+}
+.logo{
+    float: left;
+}
+/* .search{
+    float: right
+}
+.navbar{
+    display: flex;
+    
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+.search{
+    
+} */

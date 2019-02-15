@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Ici je relie mon fichier html à mon css -->
+    <!-- Je verifie que mes deux fichiers  sont liés en ecrivant ce code sur le css :
+        body{
+            background: yellow;
+        }
+    -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Unicorns</title>
+</head>
+<body>
+    <!-- I- Je détermine les zones de mon HTML :  -->
+    <!-- a/ je déclare les balise HEADER, NAV, MAIN,FOOTER 
+    code emmet => .container-fluid>nav+header+main+footer
+    -->
+
+<div class="container-fluid">
+    <!-- avec ma class container-fluid(je prend toute la largeur de mon ecran) je vais déterminer un espace de stockage  -->
+    <nav>
+        <!-- Nav -->
+        <h3>
+        My Unicorn
+        </h3>
+        <ul>
+            <li>
+                <a href="">Le principe</a>
+            </li>
+            <li>
+                <a href="">Nos licornes</a>
+            </li>
+            <li>
+                <a href="">Nous trouver</a>
+            </li>
+           <div class="clear"></div>
+        </ul>
+       
+    </nav>
+    <header>
+        <h2>Un jour, une licorne</h2>
+        <img src="../unicorns/img/rainbow.png" alt="rainbow">
+    </header>
+    <main  class="container">
+
+        <!-- Première section -->
+        <section class="unicorn">
+            <h3>Le principe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut
+            malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer
+            facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem
+            elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo
+            leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis
+            sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales.
+            Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.
+            
+            Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum
+            vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi
+            eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+        </section>
+        <!-- 2eme section -->
+        <section class="unicorn">
+            <h3>Nos Licornes</h3>
+            <div class="img">
+                <img src="img/photo1.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/photo2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/photo3.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/photo4.jpg" alt="">
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section>
+            <h3>: trouver</h3>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.118341124774!2d2.446713615672258!3d48.79871997928166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673347f65039b%3A0xec1fbdb3828d379a!2s115+Avenue+du+G%C3%A9n%C3%A9ral+de+Gaulle%2C+94000+Cr%C3%A9teil!5e0!3m2!1sfr!2sfr!4v1550243610777"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div></div>
+        <div class="clear"></div>
+        </section>
+    </main>
+    <footer></footer>
+</div>
+
+</body>
+
+
+</html>

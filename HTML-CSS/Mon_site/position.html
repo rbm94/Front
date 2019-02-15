@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Permet de définir le langage utilisé-->
+<html lang="fr">
+<!-- Permet de définir la langue de la page-->
+
+<head>
+    <!-- Tête du document, non visible sur le site-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ma page texte</title>
+    <!-- Titre du site apparaîssant sur l'onglet-->
+    <meta name="description" content="Ma première page en HTML/CSS">
+    <!-- Description sous le titre dans la recherche Google, les moteurs de recherches s'en
+servent un peu comme des mots clefs pour les rechercher-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Relie le fichier html à mon fichier css(Cascading Style Sheets)-->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
+    <!-- Liens pour les polices via Google-Font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- Lien pour le "Font-awesome" récupère la font sur le site dans GET STARTED-->
+</head>
+
+<body>
+    <!-- Corps du document-->
+    <header>
+        <!--Zone du haut, exp : bannière, logo, slogan....-->
+        <div id="logo">
+            <a href="index.html" target="_blank"><img src="img/logo.png" alt="logo html/css"></a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS </h1><!-- H1 titre de premier rang un seul par page-->
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="clear"></div>
+    </header>
+<nav>
+        <!-- menu, navigation-->
+        <a href="index.html">Structure</a>
+        <a href="text.html">Textes</a>
+        <a href="selecteur.html">Selecteurs</a>
+        <a href="image.html">Images</a>
+        <a href="position.html"class="activ">Positions</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="liste.html">Listes</a>
+        <a href="liens_menu.html">Liens & menus</a>
+        <a href="tableau.html">Tableau</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimédias</a>
+        <a href="animation.html">Animations</a>
+        <a href="explication_flexbox.html">Flexbox</a>
+</nav>
+
+<main>
+    <h2>Positions</h2>
+    <section>
+        <h3>Position absolute</h3>
+        <h3>Centrer un élement de type Block</h3>
+        <div class="centre">Bouygues</div>
+    </section>
+    
+    <section>
+        <h3>Position relative</h3>
+        <div class="relative">
+            <div></div>
+        </div>
+    </section>
+    
+    <section>
+        <h3>Position fixed</h3>
+        <p>Bouton retour vers le haut</p>
+        <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+    </section>
+    
+    <section>
+        <h3>Le pourcentage</h3>
+        <div class="trente">30%</div>
+        <div class="cinquante">50%</div>
+        <div class="cent">100%</div>
+    </section>
+
+    <section>
+        <h3>L'attribut *FLOAT*</h3>
+        <div class="carre">1</div>
+        <div class="carre">2</div>
+        <div class="carre">3</div>
+        <div class="carre">4</div>
+        <div class="clear"></div>
+
+        <div class="carre">5</div>
+        <div class="carre">6</div>
+        <div class="carre">7</div>
+        <div class="clear">
+
+        </div>
+        <div class="carre">8</div>
+        <div class="carre">9</div>
+        <div class="clear"></div>
+        
+        <div class="carre">10</div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="float2">
+        <h3>Float 2</h3>
+        <div class="rect"></div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="rectclear"></div>
+        <div class="rect"></div>
+
+    </section>

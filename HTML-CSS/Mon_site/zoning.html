@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--En-tête du document-->
+    <title> Ma page zoning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta name="description" content="Le zoning en HTML / CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="_blank"><img src="img/logo_360.png" alt="logo html css"></a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML / CSS</h1>
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Textes</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="position.html">Positions</a>
+        <a href="zoning.html" class="activ">Zoning</a>
+        <a href="listes.html">Listes</a>
+        <a href="lien_menu.html">Liens & menus</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="animation.html">Animations</a>
+        <a href="fancy_box.html">Fancy Box</a>
+        <a href="explication.html">Explications</a>
+        <a href="pattern.html">Pattern</a>
+        <a href="explication_flexbox.html">Flexbox</a>
+    </nav>
+    <main>
+        <h2>Zoning</h2>
+        <section>
+            <h3>Zoning 1</h3>
+            <div id="zoning1">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+                <aside>
+                    <p>Zone de gauche</p>
+                </aside>
+                <section>
+                    <p>Zone de droite</p>
+                </section>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <section>
+            <h3>Zoning 2</h3>
+            <div id="zoning2">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+                <aside>
+                    <p>Zone de gauche</p>
+                </aside>
+                <section>
+                    <p>Zone du milieu</p>
+                </section>
+                <aside>
+                    <p>Zone de droite</p>
+                </aside>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <section>
+            <h3>Zoning 3</h3>
+            <div id="zoning3">
+                <div class="divgauche">
+                    <p>Zone de gauche</p>
+                </div>
+                <div class="divdroite">
+                    <p>Zone de droite</p>
+                </div>
+                <footer class="clear">
+                    <p>Zone du bas</p>
+                </footer>
+            </div>
+        </section>
+        <section>
+            <h3>Zoning 4</h3>
+            <div id="zoning4">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+                <nav>
+                    <p>Menu</p>
+                </nav>
+                <section>
+                    <p>Milieu</p>
+                </section>
+                <footer>
+                    <p>Zone du bas</p>
+                </footer>
+            </div>
+        </section>
+        <section>
+            <h3>Zoning 5</h3>
+            <div id="zoning5">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+                <nav>
+                    <p>Menu</p>
+                </nav>
+                <section>
+                    <div class="divA">A</div>
+                    <div class="divB">B</div>
+                    <div class="divC">C</div>
+                    <div class="divD">D</div>
+                    <div class="clear"></div>
+                </section>
+                <footer>
+                    <p>Zone du bas</p>
+                </footer>
+            </div>
+        </section>
+        <section>
+            <h3>Zoning 6</h3>
+            <div id="zoning6">
+                <!--sert de conteneur-->
+                <header>
+                    <div class="h1">Haut 1</div>
+                    <div class="h2">Haut 2</div>
+                    <div class="h3">Haut 3</div>
+                    <div class="clear"></div>
+                </header>
+                <nav>
+                    <p>Menu</p>
+                </nav>
+                <aside>
+                    <!--j'aurai pu mettre aside et 3sections dans un main-->
+                    <p>Aside</p>
+                </aside>
+                <section>
+                    <div class="dA">A</div>
+                    <div class="dB">B</div>
+                    <div class="clear"></div>
+                </section>
+                <section class="slide">
+                    <p>Slideshow</p>
+                </section>
+                <section>
+                    <div class="dC">C</div>
+                    <div class="dD">D</div>
+                    <div class="dC">E</div>
+                    <div class="dD">F</div>
+                    <div class="clear"></div>
+                </section>
+                <footer class="clear">
+                    <p>Bas</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <a href="#logo"><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+    <footer>
+    </footer>
+</body>
+
+</html>
+
+
