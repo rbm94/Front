@@ -1,0 +1,37 @@
+#container{
+    height: 110vh;
+    background: lightblue;
+    width: 55vw;
+    margin: 0 auto;
+}
+header{
+    height: 10vh;
+    background: rgb(75, 112, 180);
+}
+section{
+        height: 35vh;
+}
+.a{
+    float: right;
+    width: 29vw;
+    background: rgba(94, 22, 189, 0.863);
+    height: 35vh;
+}
+.b{
+    /* float: left; */
+    width: 25vw;
+    background: rgb(47, 159, 163);
+    height: 35vh;
+}
+.c{
+    background: rgba(138, 136, 136, 0.863);
+    height: 35vh;
+}
+footer{
+    height: 30vh;
+   
+    background: lightcoral;
+}
+.clear{
+    clear: both;
+}

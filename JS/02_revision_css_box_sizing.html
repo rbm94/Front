@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html{
+        font-size: 62.5% ; /*/ egales 10px /en % a cause des bugs sur IE */
+    }
+    body{
+        margin: 0;
+        font-size: 1.4rem ; /*14 pixels*/
+    }
+    h1{
+        text-align: center;
+        border: 2px double magenta;
+        margin-bottom: 0;
+        padding: 1rem;/*10pixels*/
+        width: 300px;
+    }
+    p{
+        border: 2px dotted rgba(255, 0, 255, 0.534);
+        margin-top: 0;
+        font-size: 1.3rem;
+        width: 300px;
+    }
+    article{
+        border: 2px darkgrey dashed;
+        width: 300px;
+        min-width: 160px;
+        max-width: 600px;
+        padding:1rem;
+        box-sizing: border-box;
+        /* avec le "box-sizing: border-box;" , la largeur calculée sera de 300px quels que soit les border et/ou les padding*/
+        margin: 0 auto;
+    }
+    h2{
+        background: lightblue;
+        border: 2px darkgrey dashed;
+        text-align: center;
+        /* width: 160px; */
+    }
+
+    
+    </style>
+</head>
+<body>
+
+    <h1>HTML</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt natus
+    officia, id quos autem molestiae laboriosam et repellat explicabo beatae,
+    
+    <h1>CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt natus
+    officia, id quos autem molestiae laboriosam et repellat explicabo beatae, veritatis cum nobis harum
+    voluptatibus.</p>
+    <!-- liste de balises display: block; 
+    body, div, p, h1>h6 , ul, ol, li, dl, dt, dd -->
+    
+    <!-- new html5 : section, article, aside, nav, header, footer  -->
+    <!-- Les balises block sont des boites qui font 100% de largeur par défaut et qui sont afficher les unes sous les autres donc verticalement !  -->
+
+    <!-- liste de balises display: inline; a, strong, em, span, label, adress -->
+
+    <!-- liste de balises display: inline-block; img, audio, video, canvas, input, select, textarea -->
+
+    <article>
+        <h2>Histoire du WEB</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur vero illo ea aut placeat consequuntur, alias delectus, fugiat perspiciatis doloribus similique suscipit iste, id cum dolorem temporibus eaque illum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa nobis quo voluptates nulla maiores corporis aliquam, illo reprehenderit nesciunt veritatis provident nostrum temporibus natus, repellendus saepe facere, asperiores culpa.
+    </article>
+
+</body>
+</html>

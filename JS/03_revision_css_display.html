@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+        background-color: lightcoral
+        }
+    strong{
+        background-color:darkcyan;
+        padding: 1rem;
+        
+    }
+    em{
+        background-color:lightseagreen;
+        padding: 1rem;
+        display: inline-block;
+    }
+    ul{
+        border: 2px solid slateblue;
+        list-style: none;
+        padding-left: 0;
+        
+    }
+    li{
+        border: 2px solid rgb(76, 68, 131);
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    section{
+        border: 2px royalblue solid;
+        width: 60%;
+    }
+    section div{
+        border: 2px turquoise solid;
+        width: 50%;
+        box-sizing: border-box;
+        padding:1rem;
+        float: left;
+         /* Avec le float les div sortent de la section (leur parents) , elle ne les contient plus */
+    }
+    .clearfix:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    </style>
+
+
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet <strong> DU GRAS ! Y'a QUE SA...</strong> consectetur adipisicing elit. Consequuntur atque, cum tempora incidunt porro esse, est corrupti possimus odit explicabo assumenda. Alias ratione corporis sapiente recusandae, obcaecati praesentium consequuntur unde! </p>
+    <p>Lorem ipsum dolor <em>DE LITALIC</em> sit amet consectetur, adipisicing elit. Sint qui modi aliquid, nihil rem quod similique, voluptatum accusamus consequatur unde animi ea odio iure ipsa sit. Tempora repellendus esse vitae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit. Sequi amet debitis </strong> quaerat enim labore, eaque architecto laborum aperiam possimus ex! Earum ipsa nemo, dolor unde repellendus laboriosam. Non, molestias quisquam!</p>
+    <ul>
+        <li>Pomme</li>
+        <li>Pêche</li>
+        <li>Poire</li>
+    </ul>
+
+    <section class="clearfix">
+        <div>Un</div>
+        <div>Deux</div>
+        <div>Trois</div>
+    </section>
+    
+</body>
+</html>

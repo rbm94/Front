@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    a{
+        color: gray;
+        text-decoration: none;
+    }
+    a:hover, a:focus{
+        text-decoration:underline;
+        outline: thin solid rgb(211, 74, 211);
+    }
+    a:visited{
+        color: rgb(158, 78, 158);
+    }
+    a:active{
+        color: darkgray
+    }
+    div{
+        padding: 1rem;
+    }
+    :target{
+        border-left: 4px silver solid
+    }
+    #chap1:target{
+        background: #d87093
+    }
+    #chap2:target{
+        background: darkcyan;
+    }
+    #chap3:target{
+        background: darkslateblue;
+    }
+    [title]{
+        font-weight: bold;
+    }
+    [href^=http]{
+        /* epaisseur de bordure | style bordure | couleur  */
+        border-bottom: 3px dotted darkmagenta;
+        /* style : -solid | dotted | dashed= tirets */
+        background-color: silver;
+        /* Les margin et padding ne fontctionnent pas avec les display :inline  */
+        margin-bottom: 2rem;
+        display: inline-block;
+        padding: .5rem 2rem .5rem .5rem;
+        background-image: url("images/lien_externe.svg");
+        background-repeat: no-repeat;
+        text-align: right;
+        /* background-position: right center; */
+        background-position: 100% 50%;
+        background-size: 1.5rem auto; /*Homotétique= calcule automatique de la hauteur en fonction de la largeur*/
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- Lien absolu ; liens vers pages extèrieur a mon site -->
+    <a href="http://www.apple.com"> Lien vers Apple</a>
+    <a href="http://www.transavia.com">Liens vers Transavia</a>
+    <nav>
+        <a href="#chap1">Chapitre1</a>
+        <a href="#chap2">Chapitre2</a>
+        <a href="#chap3">Chapitre2</a>
+    </nav>
+    <section>
+        <div id="chap1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni, et minima, at, ad exercitationem asperiores necessitatibus ut nihil ipsum neque? Laudantium, corrupti at iure iste sed explicabo cumque cupiditate!</div>
+        <div id="chap2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odit, tempora optio corporis tenetur, explicabo amet et quasi molestiae, ullam ipsa. Perspiciatis numquam placeat rem neque natus ex, nemo necessitatibus.
+        </div>
+        <div id="chap3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa obcaecati, consectetur, mollitia beatae, commodi totam atque illum blanditiis nulla natus iusto et corporis repellat voluptate vitae repellendus ad voluptatem.</div>
+    </section>
+    
+</body>
+</html>
