@@ -1,0 +1,33 @@
+/* Header */
+#header{
+    background:darkblue;
+    height: 10vh;
+
+}
+/* MAIN */
+.slide{
+    background: navy;
+    height: 10vh;
+
+}
+.form{
+    background:  darkslateblue ;
+    height: 10vh;
+
+}
+.txt{
+    background: rgba(18, 18, 212, 0.918);
+    height: 10vh;
+}
+.chat{
+    background: rgb(111, 0, 255);
+    height: 10vh; 
+}
+/* FOOTER */
+footer{
+    background:lightblue;
+    height: 15vh;
+}
+.container-fluid{
+    padding: 0;
+}
