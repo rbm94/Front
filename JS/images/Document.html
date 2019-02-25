@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/xampp/htdocs/Front/JS/javaScript/19_fonction.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Les fonctions
+    </h2>
+    <p>
+        Les fonctions permettent de regrouper une série d'instruction pour pouvoir les réutiliser. Quand on a besoin du code d'une série d'instructions, plutôt que de le réécrire à chaque fois toutes les instructionsn, on appellera une fonction par son nom . Cet fonction contient l'enssemble des instructions à executer.
+    </p>
+    <h3>Les instructions</h3>
+    <p>
+        Un script JS est un fichier contenant une ou plusieures instructions, placées les unes à la suite des autres . 
+    </p>
+    <p>Chacune de ces instructions peut-être vue comme un ordre donné au moteur JS, une action que l'on souhaite réaliser a la manière d'une recette de cuisine </p>
+    <ul>
+        <li>Beurre</li>
+        <li>Mélangé</li>
+        <li>Verser</li>
+    </ul>
+    <p>Les instructions se suivent et sont éffectuées les unes après les autres, <strong>Du haut vers le bas </strong> , le browser analyse dans l'order de flux </p>
+    <ul>
+        <li>Créer le cadre de la boîte de dialogue </li>
+        <li>Positionner le cadre dans la fenêtre </li>
+        <li>creer un bg semi transparent sur toute la page </li>
+        <li>Placer un bouton avec du text et un événement click</li>
+        <li>Creer une zone de texte qui affichera le texte </li>
+    </ul>
+    <p>
+        Nous avons besoin d'utiliser la fonction alert en lui donnant un argument 
+        La fonction éxecutera toute les instructions à chaque fois 
+        On peut utiliser cette fonction alert 
+        Ce "quelque chose" est un argument attendu par la fonction
+
+    </p>
+    
+    <p>Les fonctions prennent souvent des arguments - des bouts de donnée dont elles ont besoin pour fair leur travails .
+       Les arguments - sont placée entres paranthèse, séparées par des virgules s'il yen a plusieurs. 
+    </p>
+    <p>
+        Par exemple la fonction alert() fait apparaîtres une popup mais vous devz donneer une chaîne comme argument pour indiquer à la fonction ce que vous souhaitez écrire dans la fenêtre.
+    </p>
+    <p>
+        On peut écrires nos propres fonctions !!!!!!
+    </p>
+    <script>
+    //Attention en absence de point virgule en fin d'instruction, seule la ligne 1 s'executera mais pas la suivante 
+    alert("il va y avoir erreur");
+    [1, 2].forEach(alert);
+    
+    var maVariable = document.querySelector('h2');
+    alert('cc');
+
+
+    //1ere façon d'écrire une fonction 
+    function  disBonjour(){
+        document.write("Bonjour !");
+    }
+    //Pour déclencer ou invoquer la fonction , on indique au moteur JS d'executer la fonction car ce n'est pas automatique ! 
+    disBonjour();
+    
+      disHello = function (){
+            document.write("Hello !");
+
+    disHello();
+    }
+
+    
+    </script>Bonjour !
+
+</body></html>

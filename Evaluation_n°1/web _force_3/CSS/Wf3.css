@@ -1,0 +1,157 @@
+/* Je fais le test pour vérifier si mon CSS est bien relié à ma feuille de style  HTML  */
+
+/* body{ 
+    background: red;
+} */
+.container{
+    margin: 0 auto;
+    width: 80%;
+    height: 150vh;
+    background:dimgray ;
+}
+nav{
+    width: 100%;
+    height: 35vh;
+    background: whitesmoke;
+}
+
+.nv1{
+    /* background: navy; */
+    float: left;
+    height: 25vh;
+    width: 25%;
+    background: navy;
+    background-image: url("../images/logo.png") no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 24vw;
+    top: 5vh;
+}
+.nv2{
+    background: palevioletred;
+    height: 25vh;
+    width: 25%;
+    margin: 0 auto;
+    position: absolute;
+    left: 49vw;
+    top: 5vh;
+}
+.block-1{ display: initial;}
+.block-2{ display: inline; }
+.cadre1{
+    /* margin: 0 auto; */
+    /* height: 5vh; */
+    /* width: 40%; */
+    
+    border: 2px black;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    top: 19vh;
+    left: 75px;
+}
+
+main{
+    height: 83vh;
+    width: 80%;
+    background: lightgrey;
+   margin: 0 auto;
+
+}
+
+.header{
+    height: 20vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../images/header-page-catalogue.png") ;
+}
+img .he{
+    height:17vh;
+    width:38vw;
+}
+.cata{
+    margin: 31px 25%;  
+}
+
+.gant1{
+    height: 20vh;
+    width: 15vw;
+    background-image: url("../images/gant-boxe-1.png");
+    box-shadow: 10px 5px 5px  #000;
+    border: 2px solid black;
+    float: left;
+    margin-left: -56px;
+}
+.gant2{
+    height: 20vh;
+    width: 15vw;
+    background-image: url("../images/gant-boxe-2.png");
+    box-shadow: 10px 5px 5px  #000;
+    border: 2px solid black;
+    display: flex;
+    position: relative;
+    right: -119px;
+}
+.gant3{
+    height: 20vh;
+    width: 15vw;
+    background-image: url("../images/gant-boxe-1.png");
+    box-shadow: 10px 5px 5px #000;
+    border: 2px solid black;
+    float: left;
+    margin-left: -56px;
+    margin-top: 8vh;
+
+}
+.gant4{
+    height: 20vh;
+    width: 15vw;
+    background-image: url("../images/gant-boxe-2.png");
+    box-shadow: 10px 5px 5px #000;
+    border: 2px solid black;
+    display: flex;
+    position: relative;
+    right: -119px;
+    top: 8vh;
+}
+.li{ 
+    height: 2vh;
+    width: 70%;
+    background: dimgray;
+    position: absolute;
+    top: 116vh;
+}
+.cadre{
+   margin: 0 auto;
+   height: 5vh;
+   width: 40%;
+   background:white ;
+   border: 1px black;
+   border-radius: 10px;
+   float: left;
+   position: relative;
+   top: 10vh;
+   right: 123px;
+}
+
+ul{ 
+    display: flex;
+    line-height: 12px;
+    letter-spacing: 2px;
+    list-style: none;
+}
+
+footer{
+   height: 35vh;
+   width: 100%;
+   background: rgb(51, 51, 51) ;
+}
+.i1, .i2, .i3, .i4{ 
+    height:100px;
+    width:100px;
+    /* background: yellow;  */
+    display: inline-block;
+    position: relative;
+    top: 104px;
+    left: 480px;
+}
