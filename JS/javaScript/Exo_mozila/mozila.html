@@ -68,10 +68,55 @@ p{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    html{
+     font-size: 62.5% ; /*10px */
+    }
+    body{
+        font: 1.4em/1.2 arial, helvetica, sans-serif;
+        /* font-size / line-height / font-family */
+        background:royalblue ;
+        margin: 0;
+    }
+    .container{
+        background:orange ;
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    h1{
+        text-align: center;
+        color: slategrey;
+        text-shadow: 2px 2px black; 
+    }
+    img{
+        display: block; /*car initialement l'image est un élément inline,et la rendent en elements block on peut la centrer */
+        margin: 0 auto;    
+    }
+
+
+
+
+    </style>
 
     
 </head>
 <body>
-    
+    <div class="container">
+     <h1>Mozilla est cool !</h1>
+     <img src="images/logo_firefox_1.png" alt="">
+     <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         <li>Item 3</li>
+     </ul>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam a soluta cupiditate. Iure cum non a ab odit magnam, eum quasi explicabo nobis consequatur, quo fugit nulla blanditiis rem.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis recusandae, rem est nostrum necessitatibus quam perspiciatis eaque, mollitia itaque quod odio delectus eligendi iste aut optio assumenda saepe corrupti?</p>
+    </div>
+            
+ <script src="./script_mozilla.js"></script>   
 </body>
 </html>
