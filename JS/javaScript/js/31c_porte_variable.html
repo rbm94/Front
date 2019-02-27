@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Créer 2 Fonction appelés a() et b() et trois variables qui seront 'x / y / z' , 2 d'entres elles seront définies à l'intèrieur de la fonction , et l'autre sera définie dans la portée globale.
+        Une 3eme fonction qui va appeler sortie() qui prend un seul paramètre
+<br>
+        Que se passe-t-il si les variables sont appelées de l'intèrieur d'une fonction 
+    </p>
+    <script>
+    var x = 1;
+
+    function a(){
+        var y = 2;
+        sortie(y);
+    }
+    function b() {
+        var z = 3;
+        sortie(z)
+    }
+    function sortie(valeur){
+        var para =document.createElement('p');
+        document.body.appendChild(para);
+        para.textContent = 'La valeur est : ' + valeur;
+    }
+    sortie(x); // x est dans la portée globale !
+    // invocation 'sortie(x)' en envoyant l'argument X ----> ce qui nous donne en sortie le resultat de 1
+   a();
+   b();
+
+// Cette fois l'appel de a() et b() renverra l'erreur "referenceError: z is not difined"
+
+    
+    </script>
+</body>
+</html>

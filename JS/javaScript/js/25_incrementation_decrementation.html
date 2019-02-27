@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        L'incrementation et la decrementation
+    </h1>
+    <p>sont des raccourcis pour ajouter ou soustraire une valeur à une variable</p>
+    <ul>
+        <li>
+            ++ x signifie ajouter 1 à la variable x
+        </li>
+        <li>
+            -- x signifie retirer 1 à la variable x
+        </li>
+        <li>
+            x +=4 signifie ajouter 4 à la variable x
+        </li>
+        <li>
+            autres variantes : -= , *= , /= ; %=
+        </li>
+    </ul>
+    <p>x++ et ++x ont le meme resultat a la difference près que x++ retourne la valeur de x <strong>avant</strong>
+        d'effectuer l'operation , alors que ++x retourne la valeur de x <strong>apres</strong> avroir effectué
+        l'opération.</p>
+
+    <script>
+        var x = 5;
+        document.write(x++ + "<br>");
+        document.write("donne 5 dans le document mais x est maintenant égale a 6" + "<br>"); //donne 5 dans le document mais x est maintenant égale a 6
+
+        document.write(++x + "<br>");
+        document.write("x est maintenant egale à 7 et donne 7 dans le document" + "<br>");//x est maintenant egale à 7 et donne 7 dans le document
+
+        var heure = 5;
+        heure++;
+        document.write("heure++; ici heure devient 6" + "<br>");
+        document.write('il est ' + heure + ' heure' + "<br>");
+
+        heure += 2;
+        document.write("heure+=2; ici heure devient 8" + "<br>");
+        document.write('il est ' + heure + ' heure' + "<br>");
+
+        heure /= 2;
+        document.write("heure/=2; ici heure devient 4" + "<br>");
+        document.write('il est ' + heure + ' heure' + "<br>");
+
+        heure %= 3;
+        document.write("heure%=3; ici heure devient 1 car 4 diviser par 3 = 1 et il reste 1 à la division" + "<br>");
+        document.write('il est ' + heure + ' heure' + "<br>");
+
+    </script>
+</body>
+
+</html>
