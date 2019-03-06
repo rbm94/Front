@@ -1,0 +1,9 @@
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        console.log('jquerry good');
+        
+    }) //Fin du scope
+
+
+</script>

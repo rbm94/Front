@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+   body{
+       background-color: rgb(179, 209, 233);
+   }
+
+   </style>
+</head>
+<body>
+   <h1>
+       JQuery, une librairie Javascript pour gagner en productivité
+<br>
+       "Write less, Do more" = écrire moins, faire plus !
+   </h1>
+<h2>Version actuelle v3.3.1</h2>
+
+<p>
+   Jquery est une bibliotheque Javascript, un Framework, qui est une boite a outils de blocs de codes réutilisable.
+   Cette librairie est rapide petite et donc legere mais riche en fonctionnalitées.
+   elle simplifie considérablement la navigation et la manipulatin dans le document Html (DOM) , La gestion des evenement, l'animation et Ajax(asynchronous Javascript and XML)
+   Grace à une API (application programmin interface) facil à utiliser et qui fonctione sur une multitude de navigateur et qui est pré-tester pour nous.
+</p>
+<p>
+   Jquery est elle-meme codée en Javascript.
+</p>
+<p>
+   Polyvalence et extensibilité. JQuery a changée la façon de travailler de millions de developpeurs.
+</p>
+
+<ul>
+   <li>Fonctions toutes Faites, Optimisées, qu'on utilisera souvent: appel Ajax, boucle, animation , toggle</li>
+   <li>résoud beaucoup de problemes de compatiblité navigateurs. Jquery a des ployfills intégrés</li>
+   <li>une lecture de code plus simple car les problemes sont gérer par la librairie</li>
+
+</ul>
+
+<p>
+   Attention Jquery n'est pas à appliquer en pensement sur un code sale (tag Soup...)
+</p>
+
+<h2>Jquery à des millions de plugins additionnels</h2>
+<h3>
+    Jquery Ui créer par des utilisateurs (jquery User Interface) version actuelle UI 1.12
+</h3>
+<p>
+   c'est un ensemble d'interface d'utilisateur, d'effets, de widgets , de themes conçus a partir de la librairie JQuery.
+
+</p>
+<p>
+   si on a juste besoin sur notre site d'un selecteur de date dans un formulaire, JQuery UI est un choix ideal: <a href="http://jqueryui.com/datepicker/">JQuery/Datepicker</a>
+</p>
+
+<h3>JQuery Mobils Version 1.4.5 : est un eframework d'interface d'utilisateur optimisé pour les ecrans tactiles</h3>
+<hr>
+<h1>Comment charger Jquery dans une page web</h1>
+<p>
+   La plus basique et la plus simple consiste a telecharger la librairie JQuery.js sur le  <a href="http://jquery.com/download">site officiel</a>
+</p>
+<p>
+   prendre le premier lien de download (Dl the compressed production jquery 3.3.1 ) et enrengistrer la cible du lien sous:
+</p>
+<p>
+   il faut enrengistrer ce fichier  Jquery-3.3.1.min.jsdans le dossier js qui sera à la racine de votre site
+</p>
+<p>
+   <strong>BIEN VERIFIER QUE LE FICHIER EST BIEN DANS LE DOSSIER JS</strong>
+</p>
+<pre>
+ <script src="jquery-3.3.1.min.js"></script>
+</pre>
+<hr>
+<br>
+<h2>Séléctioner en JQuery</h2>
+<p>Le coeur Jquery se trouve dans la selection 'éléments pour ensuite éxécuter des méthodes dessus.</p>
+<p>
+   $(selecteur) accepte en argument tou selecteurs CSS , JQuery nous renvoie ensuite une collection d'éléménts DOM dans un obj JQuery .
+</p>
+<p>
+   $(div) Séléctione tout les divs
+   $('.titre') séléctionne toutes les "class='titre'
+</p>
+<p>
+   Cette enveloppe JQuery est celle qui donne accé à toute les fonctionnalitées de jquery
+</p>
+<ul>
+   <li>Rajouter des classes</li>
+   <li>Modifier le contenu HTML</li>
+   <li> Afficher ou cacher des éléments</li>
+   <li>Les  animés</li>
+</ul>
+<p>
+   tous les élément sélectionnés en javascript pur sont des éléent DOM et tous ceux sélectionnés avec $("...") sont des élémentsdans une enveloppe JQuery
+</p>
+
+<h3>JQuery dispose de plusieurs méthod pour parcourir le DOM</h3>
+<ul>
+   <li>children() parcourt les enfants</li>
+   <li>find()parcourt les descendant</li>
+   <li>next() renvoie le voisin suivant</li>
+   <li>prev() renvoie le voisin précédent</li>
+   <li>parent() renvoie le parent</li>
+   <li>eq() renvoie, parmis une liste d'éléménts, celui qui se trouve à l'index fourni</li>
+</ul>
+
+
+<h2>Les getters et les setters, ajoute , retire des classes et savoir si il y en a  </h2>
+<ul>
+   <li>addClass() : ajoute une Class</li>
+   <li>removeClass() : retire une Class</li>
+   <li>toggleClass() : ajoute/retire Class </li>
+   <li>hasClass() : tester l'existence d'une Class</li>
+   <li>is() : tester si on a plusieurs Class</li>
+</ul>
+
+
+<h2>Les événements</h2>
+<p>La plupart des interaction de l'utilisateur avec la page web peuvent être intercéptées et une action lancée en retour </p>
+<p>on peut dire a une fonction de s'executer quand l'utilisateur clique sur un bouton ou bien quand on scrolle la fenêtre </p>
+
+<ul>
+   <li>mouse : <br>
+               click: au click de l'élément <br>
+               mouseenter: lorsque la souris passe par dessus <br>
+               mouseleave: a la sortit de la zone  </li>
+   <li>keyboard : <br>
+               keydown: touche enfoncée
+               keyup: touche clavier relachée 
+   </li>
+   <li>wndow : <br>
+               scroll: difilement de la fenêtre <br>
+               resize: redimension de la fênetre  <br></li>
+   <li>form: 
+               change: pour les éléments "input" "select" et "textarea", quand l'user change une de ces valeurs <br>        
+               submit: à l'envoie du form    
+   </li>
+   <li>document:
+               DOMContentLoaded : lancé lorsque le document HTML est complètement chargé et analysé sans attendre que les img et le CSS ne le soient
+   </li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,33 +1,43 @@
 /* Header */
-#header{
+header{
     background:darkblue;
-    height: 10vh;
-
+    height: 10rem;
+    background: url(../img/background.jpg);
 }
 /* MAIN */
-.slide{
+#slider{
     background: navy;
-    height: 10vh;
+    height: 10rem;
 
 }
-.form{
+#form{
     background:  darkslateblue ;
-    height: 10vh;
+    height: 10rem;
+}
+#txt{
+    background: rgb(22, 112, 134);
+    height: 10rem;
 
 }
-.txt{
-    background: rgba(18, 18, 212, 0.918);
-    height: 10vh;
+#cat{
+    background:  rgb(179, 141, 214) ;
+    height: 10rem;
 }
-.chat{
-    background: rgb(111, 0, 255);
-    height: 10vh; 
-}
-/* FOOTER */
 footer{
-    background:lightblue;
-    height: 15vh;
+    background:darkblue;
+    height: 2rem;
+    /* background: url(../img/background.jpg); */
+
 }
 .container-fluid{
     padding: 0;
+}
+nav a{
+    height: 10px;
+    background: rgb(5, 5, 102);
+    color: aquamarine;
+}
+h1{
+    columns: #fff;
+    margin: 0 auto;
 }

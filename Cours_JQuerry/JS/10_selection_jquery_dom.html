@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+.container{
+    border: 2px rebeccapurple solid ;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.lienActif{
+    font-weight: bold;
+    color: darkslategrey;
+
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="colLeft">
+            <h2 class="titleSite">
+                <a href="#">WF3 / Pole S</a>
+            </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eligendi modi fuga. Neque quia optio consectetur nihil ipsa. Non voluptates reiciendis modi atque eaque doloremque sunt necessitatibus nesciunt provident incidunt?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex adipisci consectetur natus eveniet eos. Accusantium nam quae quo, ipsum ipsa dignissimos qui earum accusamus, nesciunt, rem eum ea dolorem amet.</p>
+                <a href="ressources.pdf"></a>
+    </div>
+        <div class="colRight">
+            <h2 class="titleChapter">Cours JQuery</h2>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eligendi modi fuga. Neque quia optio
+                consectetur nihil ipsa. Non voluptates reiciendis modi atque eaque doloremque sunt necessitatibus nesciunt
+                provident incidunt?</p>
+            <form action="#">
+                <input type="Date">
+                <input type="Submit">
+            </form>
+        </div>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+
+    console.log('jquery chargé');
+    var monElement = $('.container');
+    console.log(monElement.children()); //séléctionne les descendant direct de ".container"//
+    console.log(monElement.children('.colLeft'));
+    console.log(monElement.children().eq(1)); 
+
+
+    console.log(monElement.children().find('h2'));
+    
+    var monPara = $('p.para'); 
+   
+    monPara.next();
+    monPara.prev();
+    monPara.parent();
+   console.log(monPara.next().next()); // renvoie un objet JQuery vide car il n'y a rien après le form
+
+    // chercher combien il y a de lien dans la page 
+    console.log($('a').length);
+
+    // chercher combien d'objets h2 ont la class titleChapter
+    console.log($('h2.titleChapter').length);
+
+    // chercher combien d'objets a dont l'attribut href est égal à #
+
+    console.log($('a[href = "#"]').length);
+
+    // au chargement de la page ce lien sera rouge 
+
+    console.log($('a[href $= ".pdf"]').length);
+
+    // au click sur ce lien, faire un toggleClass (.lienActif) pour changer sa couleur
+
+    $('a[href $= ".pdf"]').hover(function () {
+        $(this).toggleClass('lienActif');
+    })
+})
+</script>
+    </div>
+</body>
+</html>

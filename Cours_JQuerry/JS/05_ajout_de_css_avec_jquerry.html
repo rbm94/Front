@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section {
+            border: 2px crimson solid;
+            width: 70%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        Ici contenu de section
+    </section>
+    <p class="resultat"></p>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('Le DOM est chargé !');
+            // ICI TOUT NOTRE CODE
+
+            // on sélection la balise section avec jquery
+            // avec la méthode .css on peut ajouter du css via jquerry
+            // la décoration se fait dans la feuille de style plutôt
+            // $('section').css('background-color', 'gold');
+
+            // plus intéressant, on va ajouter ce fond gold au clic sur la balise section, l'intéret de jquery c'est l'interactivité
+
+            $('section').on('click', function () {
+                // ici on écrit tout ce qu'on veut faire lors du clic sur la balise section
+
+                // ajoute une propriété css à la scetion
+                // $(this).css('background-color', 'gold');
+
+                // ajoute plusieurs propriétés à la section
+                // background et font-size par exemple
+
+                // ici on va utiliser un array. Attention on a : entre chaque propriété / valeur css et a chaque fin de ligne, une virgule !
+                $(this).css({
+                    'background-color': 'orange',
+                    'font-size': '2rem'
+                })
+                // ici on récupère dans la variable couleur la valeur de couleur de fond de this
+                var couleur = $(this).css('background-color');
+                // on affiche cette valeur dans la console
+                console.log(couleur);
+
+                // sélectionner la balise p qui a la classe résultat
+                $('.resultat').html('La couleur de fond de section est : ' + couleur)
+                    .css('background-color', couleur);
+            });
+
+        }) // FIN DU SCOPE JQUERY
+
+    </script>
+</body>
+
+</html>

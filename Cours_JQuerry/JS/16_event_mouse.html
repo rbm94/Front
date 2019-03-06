@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img class="cible" src="../images/Panther.jpg" alt="BlackPanther" >
+    <p class="info"></p>
+
+
+
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        console.log('jquerry good');
+
+        $('.cible').mousedown(function(ev){
+            // on affiche coucou en dessous de l'image au click de la sourie
+            // $('.info').html('yo bad man');
+
+            // afficher dans .info le type d'événement 
+            // Préalable : ajouter un paramètre en dans les parenthèses de la déclaration de fonction : function(ev)
+            //  $('.info').html(ev.type); // affiche le type d'événement dans le p (mousedown!!)//
+            // $('.info').html(ev.which);     
+               $('.info').html("Evénement : " + ev.type + "<br>" + "bouton pressé : " + ev.which);
+        })
+    })
+
+
+</script>
+</body>
+</html>

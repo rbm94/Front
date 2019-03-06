@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base jQuery</title>
+</head>
+<style>
+
+#monForm{
+    background: rgb(3, 179, 179);
+    
+}
+</style>
+
+
+
+<body>
+
+    <form action="#" id="monForm">
+        <fieldset>
+            <legend>Infos pro</legend>
+
+            <label for="prenom">Ton prénom</label>
+            <input type="text" id="prenom">
+
+            <br>
+
+            <label for="Motpasse">Ton Mot de passe</label>
+            <input type="password" id="Motpasse">
+
+            <br>
+
+            <label for="date">ta date de Rendez-Vous</label>
+            <input type="date" id="date">
+
+            <br>
+
+            <strong> Genre : </strong>
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" value="homme" name="genre">
+
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" value="femme" name="genre">
+
+            <h4>
+                <label for="statut"> Sélectionne ton statut</label>
+            </h4>
+            <select name="statut" id="statut">
+                <option value="etudiant">Etudiant</option>
+                <option value="enseignant">Enseignant</option>
+                <option value="autre">Autre</option>
+
+                <br>
+            </select>
+
+            <p>Choix de couleurs</p>
+
+            <p>
+                <input type="checkbox" id="violet" name="couleur" checked>
+                <label for="violet">Violet</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="orange" name="couleurs">
+                <label for="orange">Orange</label>
+            </p>
+
+            <input type="reset" id="annule" value="Annuler">
+            <input type="submit" id="envoyer" value="Envoyer">
+        </fieldset>
+    </form>
+    <div class="info">
+        <p></p>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(function () {
+            console.log('jQuery est bien chargé');
+
+            // lire le prenom entré dans l'input qui a l'id="prenom" et l'afficher en console
+            // console.log($('#prenom').val());
+
+            // créer l'événement on submit et stopper la redirection
+
+            $('#monForm').on('submit', function (ev) {
+                // pour stopper la redirection on va intercepter l'événement. Attention pour celà de bien indiquer le paramètre ev dans les parenthèses de la fonction : function(ev)
+
+                ev.preventDefault();
+                console.log($('#prenom').val()); // lit le prénom de l'utlisateur
+                console.log($('#Motpasse').val()); // lit et affiche le mot de  passe             
+                console.log($('#statut').val());  // lit et affiche la valeur de statut
+                console.log($(':radio:checked').val()); // lit l'état du bouton radio qui est coché.
+                // console.log($('checkbox').val(violet));
+
+                //    $('#prenom').val('Nassim') // ecrit Nassim dans la zone de texte prenom
+                //    $(':radio').val(['homme']) // sélectionne le bouton radio homme
+
+
+                /*
+                1- on créer une balise p avec $('<p>')
+                2- remplit cette balise avec la string 'bonjour' concaténée avec la valeur de l'input #prenom
+                3- ajouter cette balise à la balise qui a la class="info"
+                */
+
+                // 1 / créer une balise p
+                $('<p>').append('Bonjour ' + $('#prenom').val()).appendTo('.info');
+
+                // a faire tous seuls : créer un p par valeur de champs du formulaire
+
+                $('<p>').append('ton mot de passe est : ' + $('#Motpasse').val()).appendTo('.info');
+
+                $('<p>').append('ta date de Rendez-vous est le : ' + $('#date').val()).appendTo('.info');
+
+                $('<p>').append('Vous êtes un(e) ' + $(':radio:checked').val()).appendTo('.info');
+
+                $('<p>').append('Ton statut est : ' + $('#statut').val()).appendTo('.info');
+
+
+
+            }) // Fin de l'événement submit
+
+
+        }) // FIN du scope jQuery
+    </script>
+</body>
+
+</html>

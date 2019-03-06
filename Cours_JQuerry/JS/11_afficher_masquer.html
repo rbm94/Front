@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+.container{
+    width: 80%;
+    height: 880px;
+    margin: 0 auto;
+    border: 2px solid violet;
+}
+.popUp{
+    width: 80px;
+    height: 80px;
+    border: 1px solid lightskyblue;
+    background: silver;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <button class="btn">click</button>
+        <div class="popUp"> Ma popup</div>
+    </div>
+
+<script src="jquery-3.3.1.min.js"></script>
+
+<script>
+
+$(function(){
+    console.log('ok');
+    
+
+$('.btn').click(function(){
+    $('popUp').toggle("flow");
+})
+})//fin du scope
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+ <style>
+*{
+    box-sizing: border-box;
+} 
+html{
+     font-size: 62.5%;
+}
+body{
+     font: 1.3rem/1.5 arial, helvetica, sans-serif;
+ }
+#monForm{
+    width: 60%;
+    background: teal;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+ }
+#monForm fieldset{
+    border: 1px solid aqua;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+ }
+legend{
+    text-align: center;
+ }
+#monForm fieldset  legend{
+    background: silver;
+    padding: 1rem;
+    border-radius: .5rem;
+  }
+#monForm input, #monForm textarea{
+    width: 100%;
+    margin: 5px 0;
+  }
+#monForm p{
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+ </style>   
+</head>
+<body>
+ 
+<form action="traitement.php" method="GET" id="monForm">
+<fieldset>
+    <legend>Mes info personnelles</legend>
+<!--identitée  -->
+    <label for="nomComplet">Ton prénom & Prénom</label>
+    <input type="text" id="nomComplet" placeholder="Nom & Prénom">
+<!-- e-mail -->
+    <label for="e-mail">Ton e-mail</label>
+    <input type="text" id="e-mail" placeholder="e-mail">
+
+<!-- telephone -->
+    <label for="numero">Ton numéro</label>
+    <input type="text" id="numero" placeholder="numero">
+<!-- Ojet -->
+    <label for="objet">Objet</label>
+    <input type="text" id="objet" placeholder="objet">
+
+    <label for="textarea">Ton 16 ou 32 </label>
+   <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+<!-- boutton envoyer  -->
+<input type="submit" id="envoyer" value="Envoyer">
+<input type="reset" id="annule" value="Annuler">
+</fieldset>
+</form>
+
+
+
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        console.log('jquerry good');
+
+        $('monForm').on('submit', function(ev){
+            ev.preventDefault();
+        })
+
+    }) //Fin du scope
+
+
+</script> 
+</body>
+</html>

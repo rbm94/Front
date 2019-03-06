@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+.violet{
+    color: blueviolet;
+}
+.grand{
+    font-size: 6em;
+}
+.rouge{
+    color: red;
+}
+.petit{
+    font-size: 2em;
+}
+div{
+    background: lightslategray ;
+}
+.pJaune{
+    background: gold;
+}
+</style>
+ 
+<p id="pierre" class="grand violet">Pierre</p>
+<p id="Hambou" class="rouge petit">Hambou</p>
+<div>Ma Div</div>
+<article>Mon super article</article>
+<p class="pJaune">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quaerat dolore labore odio sint architecto vel, sed numquam mollitia quae, possimus consequuntur consectetur assumenda atque nobis deserunt praesentium. Nostrum?</p>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+    console.log('jquery chargé');
+        $('#pierre').click(function(){ 
+    
+        $('#pierre').removeClass(' vert grand').addClass('rouge petit');
+    })
+        $('#Hambou').click(function(){
+            if($(this).hasClass('rouge'))
+            alert('Hambou est rouge');
+            else
+            alert('Hambou n\'est pas rouge');
+        }) 
+
+        $('div').hide(2000, function(){
+              $('article').hide(1000).css("color","lightseagreen").delay(2000).show(500);
+        }) //fin du hide
+    alert('fin du hide');
+        
+        $('.pJaune').fadeOut("slow", function(){
+            $(this).fadeIn(3000, function(){
+                alert('fin du fadeIN');
+             })
+            })
+        
+
+})
+/* La méthode hide() permet de cacher un élément :
+-c'est une animation
+-s'applique sur tous les éléments ciblés avec le sélecteur
+-à la fin du hide() on mettra une alert('fin du hide')*/
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tailleTextx2 {
+            font-size: 2em;
+        }
+
+        .couleurfond {
+            background-color: teal;
+        }
+
+        .carre {
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            margin-top: 50px;
+            margin: 0 auto;
+            transition: 1s;
+        }
+
+        .tourne {
+            background-color: gold;
+            transform: rotate(.5turn) scale(.5);
+        }
+    </style>
+</head>
+
+<body>
+    <strong>Je suis gras</strong><br>
+    <em>Je suis de l'italic</em><br>
+    <u>Je suis du texte souligné</u><br>
+    <button>Retire la class</button>
+    <div class="carre">Contenu de carré</div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('JQuery chargé !');
+
+            // sélectionner la balise u et lui donner la class .tailleTextex2 avec la méthode jquery .addclass
+            $('u').addClass('tailleTextx2');
+
+            // exo : quand on clic sur la balise em on ajoute la class .couleurfond à la balise strong
+
+            $('em').on('click', function () {
+                $('strong').addClass('couleurfond');
+            })
+            var retireClass = function () {
+
+                $('u').removeClass();
+            }
+            // Ici on éxécute cette fonction lors du clic sur la balise button
+            $('button').on('click', retireClass);
+
+            //  on va faire une fonction tourneCarre qui sera éxécuté au clic sur le carré, cette fonction ajoute la class tourne au carre
+            // ici on déclare la fonction tourneCarre
+            var tourneCarre = function () {
+                // $(this).addClass('tourne');
+                $(this).toggleClass('tourne');
+            }
+            // ici on éxécute la fonction au clic sur la balise .carre
+            $('.carre').on('click', tourneCarre);
+
+
+
+        }) // FIN DU SCOPE JQUERY
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <label for="cible">Mon text</label><br>
+        <textarea name="cible" id="cible" cols="30" rows="10">
+
+        </textarea>
+    </form>
+    <p class="info"></p>
+    <span class="testKey"></span>
+
+
+
+
+
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        console.log('jquerry good');
+        // Lorsque une couche est dans untextarea .cible on change la couleur de fond de test key pour mettre du teal
+    }) //Fin du scope
+    $('#cible').keydown(function(){
+        $(this).css('background-color','teal');
+    })
+         $('#cible').keyup(function () {
+        $(this).css('background-color','gray');
+    })
+
+    $('#cible').keypress(function(ev){
+        $('.info').text(ev.which);
+        // $(this).css('background-color','teal');
+    })
+
+</script>
+
+</body>
+</html>

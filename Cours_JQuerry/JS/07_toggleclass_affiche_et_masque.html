@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .listeFruits {
+
+        transform: scale(0);    
+         /* display: none; ici on cache la liste et affiche graçe au boutton */
+        background-color: firebrick;
+        transform-origin: 50% 0;
+        transition: .5s;
+        }
+
+        .affiche {
+            /* display: block; */
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <!--1-Dans le html : Ajouter une balise buttonet sa class="btn
+        2-Charger jquerry etl'afficher chargé dans la console
+        3-Créer la fonction afficheMasque() " -->
+    <button class="btn">Afficher liste Masquer liste</button>
+    <ul class="listeFruits">
+        <li>Pastèque</li>
+        <li>Melon</li>
+        <li>Mangue</li>
+        <li>Prune</li>
+    </ul>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('JQuery est chargé chef !');
+        
+            $('.btn').on('click', function(){
+                // on ajoute un toggleClasse pour afficher ou supprimer la class='affiche' sur l'objet qui a la class='listFruits'
+                $('.listeFruits').toggleClass('affiche');
+
+            })    
+            
+        })
+    </script>
+</body>
+
+</html>

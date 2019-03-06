@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Faire un form avec un menu déroulant qui contient plusieurs balises options  </p> 
+
+<form action="#">
+    <label for="animeau">Séléctionne ton animal préféré</label>
+
+    <select name="animeaux" id="animaux">
+
+    <option value="boa">boa</option>
+    <option value="baleine">baleine</option>
+    <option value="belette">belette</option>
+</select>
+</form>
+
+<p class="info"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        console.log('jquerry good');
+        // event change survient quand l'user choisit une nvl option dans la list déroulante .
+        $('select#animeaux').change(function(){
+            $('.info').html('ton animal préféré est le ' + $(this).val());
+        })
+    }) //Fin du scope
+
+
+</script>    
+</body>
+</html>
