@@ -56,7 +56,7 @@ legend{
     <input type="text" id="nomComplet" placeholder="Nom & Prénom">
 <!-- e-mail -->
     <label for="e-mail">Ton e-mail</label>
-    <input type="text" id="e-mail" placeholder="e-mail">
+    <input type="text" id="email" placeholder="e-mail">
 
 <!-- telephone -->
     <label for="numero">Ton numéro</label>
@@ -66,7 +66,7 @@ legend{
     <input type="text" id="objet" placeholder="objet">
 
     <label for="textarea">Ton 16 ou 32 </label>
-   <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+   <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
 <!-- boutton envoyer  -->
 <input type="submit" id="envoyer" value="Envoyer">
 <input type="reset" id="annule" value="Annuler">
@@ -80,15 +80,47 @@ legend{
 <script src="jquery-3.3.1.min.js"></script>
 <script>
     $(function () {
-        console.log('jquerry good');
+        console.log('JQuery est bien chargé chakall !');
 
-        $('monForm').on('submit', function(ev){
+        $('#monForm').on('submit', function (ev) {
             ev.preventDefault();
+
+            // récupérer les infos dans les variables
+            var nomComplet = $('#nomComplet').val();
+            var email = $('#email').val();
+            var objet = $('#objet').val();
+            var numero = $('#numero').val();
+            var message = $('#message').val();
+
+            $(this).replaceWith(
+                // ici attention on a des apostrophes inversé alt gr + 7
+
+                `
+                    <p class="feedBack">
+                        Bonjour <strong> ${nomComplet}</strong>
+                        <em> ${email} </em><br>
+                        Vous nous avez contacté au sujet de<strong> ${objet} </strong>
+                        Nous vous recontacterons prochainement au <strong> ${numero} </strong> <br>
+                        Voici votre message <br> 
+                        ${message}
+                    </p>
+                    `
+            )
+
+
+            /*$('<p>').append('bonjour ' + $('#nomComplet').val()).appendTo('.info');
+            
+            $('<p>').append('Ton email est ' + $('#email').val()).appendTo('.info');
+            
+            $('<p>').append('Ton nuiméro est le ' + $('#tel').val()).appendTo('.info');
+            
+            $('<p>').append('Ton sujet est ' + $('#sujet').val()).appendTo('.info');
+            
+            $('<p>').append('Ton sujet est ' + $('#message').val()).appendTo('.info');
+            */
         })
 
-    }) //Fin du scope
-
-
-</script> 
+    })
+</script>
 </body>
 </html>

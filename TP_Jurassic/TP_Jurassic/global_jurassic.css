@@ -1,0 +1,122 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+}
+html{
+    /* background: lightblue; */
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font: 1.4rem/1.5 arial, helvetica,sans-serif;
+}
+.list_unstyled{
+    padding-left: 0;
+    list-style: none;
+}
+/* Contenue du Header */
+
+header{
+    position: relative;
+    background:url(img/dinosaure.jpg) no-repeat 50% -170px;
+    background-size: 100% auto;
+    height: 600px; 
+    color: rgb(233, 104, 125);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    height: 35px;
+    /* border: 2px solid #000; */
+    background-color: rgba(0, 0, 0, .5);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgba(211, 22, 211, 0.753); */
+}
+li{
+    /* border: 2px dashed rgba(211, 22, 211, 0.753); */
+}
+.btn{
+    /* border-radius: .5rem; */
+    background-color: rgb(233, 104, 125);
+}
+.logo{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.bandeau{
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* border: 2px solid darkorchid; */
+}
+iframe{
+    width: 100%;
+    display: flex;
+}
+/* Layout / Fondation */
+
+footer{
+    background: #000;
+    height: 200px;
+    color: whitesmoke;
+}
+main section{
+    padding-top: 5rem;
+    /* border: 2px dashed black; */
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+.presentation{
+    width: 60%;
+}
+
+img.gate{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.btn-primary{
+    /* box-shadow: 0 0 6 2  black; */
+    border-radius: .5rem;
+    font-size: 3rem;
+    color: #000;
+    background-color: steelblue;
+}
+.info{
+width: 70%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    /* border: 1px solid slategray; */
+    width: 50%;
+}
+.partenaires {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.partenaires img{
+    padding-bottom: 10px; 
+    /* width: 70px;
+    height: 60px; */
+    text-align: center;
+}
