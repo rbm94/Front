@@ -120,6 +120,22 @@
 
                 $('<p>').append('Ton statut est : ' + $('#statut').val()).appendTo('.info');
 
+                function couleur(){
+                    var couleurs = [];
+                    return function(){
+                        $("input[type= 'checkbox']:cheked").each(
+                            function(){
+                                couleurs.push(' ' + $(this).attr('id'));
+                                console.log(couleurs);
+                                
+                            }
+                        ) // fin du each
+                        $('<p>').append(' You chose that color ' + couleurs)
+                            .appendTo('.info');
+                    }
+                }
+                var ajoutCouleurs = couleurs();
+                ajoutCouleurs();
 
 
             }) // Fin de l'événement submit
